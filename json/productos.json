@@ -1,0 +1,3241 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nombre": "Abarrotes",
+            "subcategorias": [
+                {
+                    "id": 1,
+                    "nombre": "Aceites",
+                    "marcas": [
+                        "Clover",
+                        "Capullo",
+                        "Gourmet",
+                        "Grupo Diana",
+                        "Vionelli",
+                        "Mazola",
+                        "En Su Punto"
+                    ],
+                    "productos": [
+                        {
+                            "id": 1,
+                            "nombre": "Aceite De Soya",
+                            "Marca": "Clover",
+                            "Presentación": "Botella 3L",
+                            "Precio": 4816,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Clover 3L.png"
+                        },
+                        {
+                            "id": 2,
+                            "nombre": "Aceite De Soya",
+                            "Marca": "Capullo",
+                            "Presentación": "Botella 3L",
+                            "Precio": 6466,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Capullo.png"
+                        },
+                        {
+                            "id": 3,
+                            "nombre": "Aceite De Soya",
+                            "Marca": "Clover",
+                            "Presentación": "Botella 1500ML",
+                            "Precio": 2413,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Clover 1L.png"
+                        },
+                        {
+                            "id": 4,
+                            "nombre": "Aceite Line",
+                            "Marca": "Gourmet",
+                            "Presentación": "Botella 900ML",
+                            "Precio": 1900,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Gourme.png"
+                        },
+                        {
+                            "id": 5,
+                            "nombre": "Aceite Natural Rica Palma",
+                            "Marca": "Grupo Diana",
+                            "Presentación": "Botella 900ML",
+                            "Precio": 1028,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Diana.png"
+                        },
+                        {
+                            "id": 6,
+                            "nombre": "Aceite de Girasol",
+                            "Marca": "Vionelli",
+                            "Presentación": "Botella 3L",
+                            "Precio": 4990,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Vionelli.png"
+                        },
+                        {
+                            "id": 7,
+                            "nombre": "Aceite de maiz y canola",
+                            "Marca": "Mazola",
+                            "Presentación": "Botella 1L",
+                            "Precio": 1100,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Mazola.png"
+                        },
+                        {
+                            "id": 8,
+                            "nombre": "Aceite Vegetal",
+                            "Marca": "En Su Punto",
+                            "Presentación": "Botella 1045ML",
+                            "Precio": 1300,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/En su punto.png"
+                        }
+                    ]
+                },
+                {   
+                    "id": 2,
+                    "nombre": "Arroz",
+                    "marcas": [
+                        "Tio Pelon",
+                        "Sabanero",
+                        "Luisiana",
+                        "Don Pedro",
+                        "Mr.Maximo",
+                        "LIBORIO"
+                    ],
+                    "productos": [
+                        {
+                            "id": 9,
+                            "nombre": "Arroz Clasico 91%",
+                            "Marca": "Tio Pelon",
+                            "Presentación": "Bolsa 1800G",
+                            "Precio": 1500,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Tio Pelon 91.jpeg"
+                        },
+                        {
+                            "id": 10,
+                            "nombre": "Arroz Enriquecido 95%",
+                            "Marca": "Sabanero",
+                            "Presentación": "Bolsa 1800G",
+                            "Precio": 1700,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Sabanero 95.jpeg"
+                        },
+                        {
+                            "id": 11,
+                            "nombre": "Arroz Enriquecido 90%",
+                            "Marca": "Sabanero",
+                            "Presentación": "Bolsa 1800G",
+                            "Precio": 1493,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Sabanero 90.jpeg"
+                        },
+                        {
+                            "id": 12,
+                            "nombre": "Arroz Precocido 95%",
+                            "Marca": "Luisiana",
+                            "Presentación": "Bolsa 1000G",
+                            "Precio": 1196,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Sabanero 90.jpeg"
+                        },
+                        {
+                            "id": 13,
+                            "nombre": "Arroz Precocido 95%",
+                            "Marca": "Don Pedro",
+                            "Presentación": "Bolsa 1000G",
+                            "Precio": 1151,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Don Pedro 95.jpeg"
+                        },
+                        {
+                            "id": 14,
+                            "nombre": "Arroz Enriquecido 95%",
+                            "Marca": "Mr.Maximo",
+                            "Presentación": "Bolsa 1800G",
+                            "Precio": 1651,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Maximo 95.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "nombre": "Azucar",
+                    "marcas": [
+                        "Splenda",
+                        "Natuvia",
+                        "Zukra",
+                        "Vigui",
+                        "Doña Maria"
+                    ],
+                    "productos": [
+                        {
+                            "id": 19,
+                            "nombre": "Edulcorante Original",
+                            "Marca": "Splenda",
+                            "Presentación": "50 UND 50G ",
+                            "Precio": 2637,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Splenda.jpeg"
+                        },
+                        {
+                            "id": 20,
+                            "nombre": "Edulcorante Con Stevia",
+                            "Marca": "Natuvia",
+                            "Presentación": "100 UND 100G ",
+                            "Precio": 3088,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Natuvia.jpeg"
+                        },
+                        {
+                            "id": 21,
+                            "nombre": "Azucar Crudo",
+                            "Marca": "Zukra",
+                            "Presentación": "2000G ",
+                            "Precio": 1896,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Zukra.jpeg"
+                        },
+                        {
+                            "id": 22,
+                            "nombre": "Azucar Molido",
+                            "Marca": "Vigui",
+                            "Presentación": "175G ",
+                            "Precio": 422,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Vigui Molida.jpeg"
+                        },
+                        {
+                            "id": 23,
+                            "nombre": "Azucar Crudo",
+                            "Marca": "Zukra",
+                            "Presentación": "1800G ",
+                            "Precio": 2463,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Zukra Tarro.jpeg"
+                        },
+                        {
+                            "id": 24,
+                            "nombre": "Azucar En Sobre",
+                            "Marca": "Doña Maria",
+                            "Presentación": "100 UND 5G ",
+                            "Precio": 422,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Bolsitas Doña Maria.jpeg"
+                        },
+                        {
+                            "id": 25,
+                            "nombre": "Azucar Molida",
+                            "Marca": "Doña Maria",
+                            "Presentación": "500G ",
+                            "Precio": 652,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Doña Maria 500g.jpeg"
+                        },
+                        {
+                            "id": 26,
+                            "nombre": "Azucar Blanco",
+                            "Marca": "Doña Maria",
+                            "Presentación": "5000G ",
+                            "Precio": 3476,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Doña Maria 5kg.jpeg"
+                        },
+                        {
+                            "id": 27,
+                            "nombre": "Azucar Blanco",
+                            "Marca": "Doña Maria",
+                            "Presentación": "2000G ",
+                            "Precio": 1400,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Doña Maria 2kg.jpeg"
+                        },
+                        {
+                            "id": 28,
+                            "nombre": "Azucar Blanco",
+                            "Marca": "Doña Maria",
+                            "Presentación": "1000G ",
+                            "Precio": 7120,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Doña Maria 1kg.jpeg"
+                        }
+                    ]
+                },
+                {   
+                    "id": 4,
+                    "nombre": "Bebidas",
+                    "marcas": [
+                        "Jet",
+                        "Disfruta más",
+                        "Cotuba",
+                        "Alpina",
+                        "Fuze Tea",
+                        "Inca Kola"
+                    ],
+                    "productos": [
+                        {
+                            "id": 29,
+                            "nombre": "Bebida Energetica",
+                            "Marca": "Jet",
+                            "Presentación": "Botella 600ML ",
+                            "Precio": 1039,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Jet.jpeg"
+                        },
+                        {
+                            "id": 30,
+                            "nombre": "Té Blanco",
+                            "Marca": "Disfruta más",
+                            "Presentación": "Botella 3000ML ",
+                            "Precio": 1041,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Mas Te.jpeg"
+                        },
+                        {
+                            "id": 31,
+                            "nombre": "Bebida De Guarana",
+                            "Marca": "Cotuba",
+                            "Presentación": "Botella 2000ML ",
+                            "Precio": 1051,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cotuba.jpeg"
+                        },
+                        {
+                            "id": 32,
+                            "nombre": "Bebida Arizona TÉ verde Miel & Ginsehg",
+                            "Marca": "Cotuba",
+                            "Presentación": "Lata 2000ML ",
+                            "Precio": 706,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cotuba Guarana.jpeg"
+                        },
+                        {
+                            "id": 33,
+                            "nombre": "Agua",
+                            "Marca": "Alpina",
+                            "Presentación": "Botella 6000ML ",
+                            "Precio": 3100,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Alpina.jpeg"
+                        },
+                        {
+                            "id": 34,
+                            "nombre": "Bebida Mango y Manzanilla ",
+                            "Marca": "Fuze Tea",
+                            "Presentación": "Botella 500ML ",
+                            "Precio": 610,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Fuze Tea.jpeg"
+                        },
+                        {
+                            "id": 35,
+                            "nombre": "Bebida Gaaseosa",
+                            "Marca": "Inca Kola",
+                            "Presentación": "Botella 1500ML ",
+                            "Precio": 3739,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Inca Kola.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "nombre": "Cafe",
+                    "marcas": [
+                        "1820",
+                        "Dos Pinos Britt",
+                        "Britt",
+                        "Leyenda"
+                    ],
+                    "productos": [
+                        {
+                            "id": 36,
+                            "nombre": "Café Molido",
+                            "Marca": "1820",
+                            "Presentación": "Bolsa 250G ",
+                            "Precio": 1845,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/1820 Claro Molido.jpeg"
+                        },
+                        {
+                            "id": 37,
+                            "nombre": "Café Grano",
+                            "Marca": "1820",
+                            "Presentación": "Bolsa 340G ",
+                            "Precio": 2895,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/1820 Clasico Entero.jpeg"
+                        },
+                        {
+                            "id": 38,
+                            "nombre": "Café Molido",
+                            "Marca": "1820",
+                            "Presentación": "Bolsa 1000G ",
+                            "Precio": 6572,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/1820 Clasico.jpeg"
+                        },
+                        {
+                            "id": 39,
+                            "nombre": "Bebida De Café Moka",
+                            "Marca": "Dos Pinos Britt",
+                            "Presentación": "Bolsa 250ML ",
+                            "Precio": 1250,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Britt Iced Mocha.jpeg"
+                        },
+                        {
+                            "id": 40,
+                            "nombre": "Bebida De Café Vainilla",
+                            "Marca": "Dos Pinos Britt",
+                            "Presentación": "Bolsa 250ML ",
+                            "Precio": 1250,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Britt Iced Vainilla.jpeg"
+                        },
+                        {
+                            "id": 41,
+                            "nombre": "Café Molido Monteverde",
+                            "Marca": "Britt",
+                            "Presentación": "Bolsa 340G ",
+                            "Precio": 6989,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Britt Monteverde.jpeg"
+                        },
+                        {
+                            "id": 42,
+                            "nombre": "Café Molido Orgánico",
+                            "Marca": "Britt",
+                            "Presentación": "Bolsa 340G ",
+                            "Precio": 7385,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Britt Organico.jpeg"
+                        },
+                        {
+                            "id": 43,
+                            "nombre": "Café Molido Clasico",
+                            "Marca": "Leyenda",
+                            "Presentación": "Bolsa 250G ",
+                            "Precio": 7385,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Leyenda Clasico.jpeg"
+                        },
+                        {
+                            "id": 44,
+                            "nombre": "Café Molido Crema Irlandesa",
+                            "Marca": "Leyenda",
+                            "Presentación": "Bolsa 250G ",
+                            "Precio": 3057,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Leyenda Crema Irlandesa.jpeg"
+                        },
+                        {
+                            "id": 45,
+                            "nombre": "Café Molido Vainilla",
+                            "Marca": "Leyenda",
+                            "Presentación": "Bolsa 250G ",
+                            "Precio": 3057,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Leyenda Vainilla.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "nombre": "Frutas",
+                    "marcas": [
+                        "CB",
+                        "Fruta Internacional",
+                        "INTERFRUTD"
+                    ],
+                    "productos": [
+                        {
+                            "id": 46,
+                            "nombre": "Sandia Criolla",
+                            "Marca": "CB",
+                            "Presentación": "KG ",
+                            "Precio": 711,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/SANDIA CRIOLLA CB KG.jpeg"
+                        },
+                        {
+                            "id": 47,
+                            "nombre": "Piña Oro",
+                            "Marca": "CB",
+                            "Presentación": "1UND ",
+                            "Precio": 1199,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Piña Oro.jpeg"
+                        },
+                        {
+                            "id": 48,
+                            "nombre": "Pera Danjou",
+                            "Marca": "Fruta Internacional",
+                            "Presentación": "1UND",
+                            "Precio": 480,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PERA DANJOU FRUTA INTERNACIONAL 1 UND.jpeg"
+                        },
+                        {
+                            "id": 49,
+                            "nombre": "Naranja",
+                            "Marca": "CB",
+                            "Presentación": "Malla 1UND",
+                            "Precio": 1676,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/NARANJA CB MALLA 1 UND.jpeg"
+                        },
+                        {
+                            "id": 50,
+                            "nombre": "Mora",
+                            "Marca": "",
+                            "Presentación": "Bandeja Grande 1UND",
+                            "Precio": 2114,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/MORA BANDEJA GRANDE 1 UND.jpeg"
+                        },
+                        {
+                            "id": 51,
+                            "nombre": "Melocoton",
+                            "Marca": "CB",
+                            "Presentación": "Por Kilo",
+                            "Precio": 4655,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/MELOCOTON CB POR KILO.jpeg"
+                        },
+                        {
+                            "id": 52,
+                            "nombre": "Manzana Granny",
+                            "Marca": "INTERFRUTD",
+                            "Presentación": "Empacada 6UND",
+                            "Precio": 939,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Manzana Granny.jpeg"
+                        },
+                        {
+                            "id": 53,
+                            "nombre": "Manzana Gala",
+                            "Marca": "Fruta Internacional",
+                            "Presentación": "Empacada 6UND",
+                            "Precio": 1380,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Manzana Gala.jpeg"
+                        },
+                        {
+                            "id": 54,
+                            "nombre": "Manzana Mixta",
+                            "Marca": "Fruta Internacional",
+                            "Presentación": "Empacada 6UND",
+                            "Precio": 1347,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/MANZANA EMPACADA MIXTA.jpeg"
+                        },
+                        {
+                            "id": 55,
+                            "nombre": "Mandarina",
+                            "Marca": "CB",
+                            "Presentación": "KG",
+                            "Precio": 2365,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/MANDARINA CB CLEMENTINA.jpeg"
+                        },
+                        {
+                            "id": 56,
+                            "nombre": "Limon Dulce",
+                            "Marca": "",
+                            "Presentación": "1UND",
+                            "Precio": 292,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/LIMON DULCE 1 UND.jpeg"
+                        },
+                        {
+                            "id": 57,
+                            "nombre": "Limon Ácido",
+                            "Marca": "CB",
+                            "Presentación": "1UND",
+                            "Precio": 91,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/LIMON ACIDO MESINO.jpeg"
+                        },
+                        {
+                            "id": 58,
+                            "nombre": "Limon Ácido Mandarino",
+                            "Marca": "CB",
+                            "Presentación": "1UND",
+                            "Precio": 91,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/LIMON ACIDO MANDARINO.jpeg"
+                        },
+                        {
+                            "id": 59,
+                            "nombre": "Limon Dulce",
+                            "Marca": "",
+                            "Presentación": "1UND",
+                            "Precio": 292,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/LIMON DULCE.jpeg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Frescos",
+            "subcategorias": [
+                {
+                    "id": 7,
+                    "nombre": "Huevos",
+                    "marcas": [
+                        "Enriquecidos"
+                    ],
+                    "productos": [
+                        {
+                            "id": 60,
+                            "nombre": "Huevo Criollo",
+                            "Marca": "",
+                            "Presentación": "18UND",
+                            "Precio": 2273,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/HUEVO CRIOLLO 18 UND.jpeg"
+                        },
+                        {
+                            "id": 61,
+                            "nombre": "Huevo Criollo",
+                            "Marca": "Enriquecidos",
+                            "Presentación": "X Kilo",
+                            "Precio": 2510,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/HUEVO CRIOLLO X.jpeg"
+                        },
+                        {
+                            "id": 62,
+                            "nombre": "Huevo Criollo De Pastoreo",
+                            "Marca": "",
+                            "Presentación": "30UND KG",
+                            "Precio": 2290,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/HUEVO CRIOLLO DE PASTOREO CARTON 30 UND.jpeg"
+                        },
+                        {
+                            "id": 63,
+                            "nombre": "Huevo Criollo De Pastoreo",
+                            "Marca": "",
+                            "Presentación": "15UND KG",
+                            "Precio": 2510,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/HUEVO CRIOLLO DE PASTOREO CARTON 15 UND.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "nombre": "Panaderia y Reposteria",
+                    "marcas": [
+                        "Spoon",
+                        "CB"
+                    ],
+                    "productos": [
+                        {
+                            "id": 64,
+                            "nombre": "Tres Leches",
+                            "Marca": "Spoon",
+                            "Presentación": "Porcion 120G ",
+                            "Precio": 1908,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/TRES LECHES SPOON PORCION 129 G.jpeg"
+                        },
+                        {
+                            "id": 65,
+                            "nombre": "Torta Pie De Limon",
+                            "Marca": "Spoon",
+                            "Presentación": "Porcion 1770G ",
+                            "Precio": 17536,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/TORTA SPOON PIE DE LIMON.jpeg"
+                        },
+                        {
+                            "id": 66,
+                            "nombre": "Queque Seco",
+                            "Marca": "",
+                            "Presentación": "350G ",
+                            "Precio": 1850,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/QUEQUE SECO 350 G.jpeg"
+                        },
+                        {
+                            "id": 67,
+                            "nombre": "Queque De Zanahoria",
+                            "Marca": "CB",
+                            "Presentación": "1UND ",
+                            "Precio": 2395,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/QUEQUE DE ZANAHORIA CB 1 UND.jpeg"
+                        },
+                        {
+                            "id": 68,
+                            "nombre": "Queque De Chocolate",
+                            "Marca": "CB",
+                            "Presentación": "Grande 1UND",
+                            "Precio": 3325,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/QUEQUE DE CHOCOLATE CB GRANDE 1 UND.jpeg"
+                        },
+                        {
+                            "id": 69,
+                            "nombre": "Dona Mini Chocolate y Confituras",
+                            "Marca": "",
+                            "Presentación": "1UND",
+                            "Precio": 325,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/DONA MINI CHOCOLATE Y CONFITURAS 1 UND.jpeg"
+                        },
+                        {
+                            "id": 70,
+                            "nombre": "Dona Mini Blanca y Confituras",
+                            "Marca": "",
+                            "Presentación": "1UND",
+                            "Precio": 325,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/DONA MINI BLANCA Y CONFITURAS 1 UND.jpeg"
+                        },
+                        {
+                            "id": 71,
+                            "nombre": "Dona Mini Empacada",
+                            "Marca": "CB",
+                            "Presentación": "UND ",
+                            "Precio": 1595,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/DONA CB MINI EMPACADA und.jpeg"
+                        },
+                        {
+                            "id": 72,
+                            "nombre": "Budin",
+                            "Marca": "",
+                            "Presentación": "1UND ",
+                            "Precio": 675,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/BUdin 1 UND.jpeg"
+                        },
+                        {
+                            "id": 73,
+                            "nombre": "Brownie De Chocolate",
+                            "Marca": "CB",
+                            "Presentación": "1UND ",
+                            "Precio": 725,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Budin.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 9,
+                    "nombre": "Verduras",
+                    "marcas": [
+                        "CB"
+                    ],
+                    "productos": [
+                        {
+                            "id": 74,
+                            "nombre": "Albahaca",
+                            "Marca": "CB",
+                            "Presentación": "Bolsa 1UND ",
+                            "Precio": 656,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Albahaca.jpeg"
+                        },
+                        {
+                            "id": 75,
+                            "nombre": "Apio",
+                            "Marca": "CB",
+                            "Presentación": "KG",
+                            "Precio": 1629,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/APIO.jpeg"
+                        },
+                        {
+                            "id": 76,
+                            "nombre": "Culantro Castilla",
+                            "Marca": "CB",
+                            "Presentación": "Rollo 1UND ",
+                            "Precio": 423,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/CULANTRO CASTILLA CB ROLLO.jpeg"
+                        },
+                        {
+                            "id": 77,
+                            "nombre": "Culantro Coyote",
+                            "Marca": "CB",
+                            "Presentación": "Rollo 1UND ",
+                            "Precio": 274,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/CULANTRO COYOTE ROLLO.jpeg"
+                        },
+                        {
+                            "id": 78,
+                            "nombre": "Jengibre",
+                            "Marca": "CB",
+                            "Presentación": "KG",
+                            "Precio": 1563,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JENGIBRE.jpeg"
+                        },
+                        {
+                            "id": 79,
+                            "nombre": "Oregano",
+                            "Marca": "",
+                            "Presentación": "Paquete 1UND ",
+                            "Precio": 547,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/OREGANO PAQUETE.jpeg"
+                        },
+                        {
+                            "id": 80,
+                            "nombre": "Perejil",
+                            "Marca": "",
+                            "Presentación": "Rollo 1UND ",
+                            "Precio": 228,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PEREJIL ROLLO.jpeg"
+                        },
+                        {
+                            "id": 81,
+                            "nombre": "Romero",
+                            "Marca": "",
+                            "Presentación": "Paquete 1UND ",
+                            "Precio": 802,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ROMERO PAQUETE.jpeg"
+                        },
+                        {
+                            "id": 82,
+                            "nombre": "Sabila Hoja",
+                            "Marca": "",
+                            "Presentación": "1UND ",
+                            "Precio": 806,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/SABILA HOJA.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "nombre": "Carnes",
+                    "marcas": [
+                        "CB",
+                        "St Peter"
+                    ],
+                    "productos": [
+                        {
+                            "id": 83,
+                            "nombre": "Alas De Pollo",
+                            "Marca": "",
+                            "Presentación": "KG",
+                            "Precio": 3415,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Alas de Pollo.jpeg"
+                        },
+                        {
+                            "id": 84,
+                            "nombre": "Bistec De Cerdo",
+                            "Marca": "CB",
+                            "Presentación": "KG",
+                            "Precio": 3495,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Bistec Cerdo.jpeg"
+                        },
+                        {
+                            "id": 85,
+                            "nombre": "Bisteck De Res Adobado Criollo",
+                            "Marca": "",
+                            "Presentación": "KG",
+                            "Precio": 8449,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Bisctec Adobado.jpeg"
+                        },
+                        {
+                            "id": 86,
+                            "nombre": "Carne Molida Super Especial De Res",
+                            "Marca": "",
+                            "Presentación": "KG",
+                            "Precio": 6055,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Carne molida.jpeg"
+                        },
+                        {
+                            "id": 87,
+                            "nombre": "Chuleta De Cerdo",
+                            "Marca": "CB",
+                            "Presentación": "KG",
+                            "Precio": 3500,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Chuleda Cerdo.jpeg"
+                        },
+                        {
+                            "id": 88,
+                            "nombre": "Costilla De Cerdo ",
+                            "Marca": "CB",
+                            "Presentación": "KG",
+                            "Precio": 3795,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Costilla Cerdo.jpeg"
+                        },
+                        {
+                            "id": 89,
+                            "nombre": "Fajitas De Pollo",
+                            "Marca": "CB",
+                            "Presentación": "KG",
+                            "Precio": 5926,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Fajitas Pollo.jpeg"
+                        },
+                        {
+                            "id": 90,
+                            "nombre": "Filet De Pechuga De Pollo",
+                            "Marca": "CB",
+                            "Presentación": "KG",
+                            "Precio": 5366,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Filet Pechuga Pollo.jpeg"
+                        },
+                        {
+                            "id": 91,
+                            "nombre": "Filete De Tilapia ",
+                            "Marca": "St Peter",
+                            "Presentación": "KG",
+                            "Precio": 6649,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Filet Tilapia.jpeg"
+                        },
+                        {
+                            "id": 92,
+                            "nombre": "Hueso Carnudo De Res",
+                            "Marca": "CB",
+                            "Presentación": "KG",
+                            "Precio": 4774,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Chuleta Cerdo Ahumada.jpeg"
+                        }
+                    ]   
+                },
+                {
+                    "id": 11,
+                    "nombre": "Comidas Preparadas",
+                    "marcas": [
+                        "CB"
+                    ],
+                    "productos": [
+                        {
+                            "id": 93,
+                            "nombre": "Arroz Con Pollo",
+                            "Marca": "CB",
+                            "Presentación": "1UND",
+                            "Precio": 1595,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/arroz con pollo.jpeg"
+                        },
+                        {
+                            "id": 94,
+                            "nombre": "Casado Con Carne Mechada",
+                            "Marca": "CB",
+                            "Presentación": "1UND",
+                            "Precio": 2500,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Casaso CB con carne mechada.png"
+                        },
+                        {
+                            "id": 95,
+                            "nombre": "Emparedado Pan Integral Light De Pavo y Queso",
+                            "Marca": "CB",
+                            "Presentación": "1UND",
+                            "Precio": 1600,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/EMPAREDADO PAN INTEGRAK LIGTH DE PAVO Y QUESO.jpeg"
+                        },
+                        {
+                            "id": 96,
+                            "nombre": "Ensalada Fria Caracolitos",
+                            "Marca": "CB",
+                            "Presentación": "1UND",
+                            "Precio": 1150,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ensalada fria caracolitos.jpeg"
+                        },
+                        {
+                            "id": 97,
+                            "nombre": "Fideos en salsa blanca",
+                            "Marca": "CB",
+                            "Presentación": "1UND",
+                            "Precio": 1995,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Fideos en salsa blanca.jpeg"
+                        },
+                        {
+                            "id": 98,
+                            "nombre": "Gallo Pinto Grande",
+                            "Marca": "CB",
+                            "Presentación": "1UND",
+                            "Precio": 1725,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Gallo Pinto CB Huevo y Natilla 1.00 UND.jpeg"
+                        },
+                        {
+                            "id": 99,
+                            "nombre": "Gallo Pinto Huevo y Natilla",
+                            "Marca": "CB",
+                            "Presentación": "1UND",
+                            "Precio": 1650,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/gallo pinto cb grande.jpeg"
+                        },
+                        {
+                            "id": 100,
+                            "nombre": "Piña Personal",
+                            "Marca": "",
+                            "Presentación": "1UND",
+                            "Precio": 775,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PIÑA COMPRE BIEN PERSONAL 1 UND.jpeg"
+                        },
+                        {
+                            "id": 101,
+                            "nombre": "Pollo Grill Con Puré De Papa",
+                            "Marca": "CB",
+                            "Presentación": "1UND",
+                            "Precio": 2995,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Plato Pollo Grill con puré de papa.jpeg"
+                        },
+                        {
+                            "id": 102,
+                            "nombre": "Lasagna De Pollo",
+                            "Marca": "CB",
+                            "Presentación": "Porcion 1UND",
+                            "Precio": 1995,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/porcion de lasagña de pollo.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "nombre": "Embutidos",
+                    "marcas": [
+                        "Cinta Azul",
+                        "San Rafael",
+                        "ZAR",
+                        "Kimby",
+                        "FUD"
+                    ],
+                    "productos": [
+                        {
+                            "id": 103,
+                            "nombre": "Chorizo Parrillero Precocido Ahumado de Cerdo",
+                            "Marca": "Cinta Azul",
+                            "Presentación": "300G",
+                            "Precio": 2363,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/chorizo cinta azul precocido parrillero ahumado de cerdo.jpeg"
+                        },
+                        {
+                            "id": 104,
+                            "nombre": "Chorizo Con Chile Chipotle De Cerdo",
+                            "Marca": "San Rafael",
+                            "Presentación": "300G",
+                            "Precio": 2369,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/CHORIZO SAN RAFAEL CON CHILE CHIPOTLE DE CERDO.jpeg"
+                        },
+                        {
+                            "id": 105,
+                            "nombre": "Jamon Ahumado De Pavo Light",
+                            "Marca": "Cinta Azul",
+                            "Presentación": "250G",
+                            "Precio": 4452,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/jamon cinta azul ahumado de pavo light 250 g.jpeg"
+                        },
+                        {
+                            "id": 106,
+                            "nombre": "Jamon Cocido Tico De Cerdo",
+                            "Marca": "Cinta Azul",
+                            "Presentación": "100G",
+                            "Precio": 1048,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JAMON CINTA AZUL COCIDO TICO DE CERDO 100 G.jpeg"
+                        },
+                        {
+                            "id": 107,
+                            "nombre": "Chorizo Cocido De Cerdo",
+                            "Marca": "ZAR",
+                            "Presentación": "600G",
+                            "Precio": 4295,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/SALAME SAN RAFAEL COCIDO DE CERDO 200,00 G.jpeg"
+                        },
+                        {
+                            "id": 108,
+                            "nombre": "Mortadela Criolla De Cerdo",
+                            "Marca": "Kimby",
+                            "Presentación": "500G",
+                            "Precio": 1716,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/MORTADELA KIMBY CRIOLLA DE CERDO.jpeg"
+                        },
+                        {
+                            "id": 109,
+                            "nombre": "Mortadela De Pollo Economica",
+                            "Marca": "Kimby",
+                            "Presentación": "KG",
+                            "Precio": 2222,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/MORTADELA KIMBY DE POLLO ECONOMICA.jpeg"
+                        },
+                        {
+                            "id": 110,
+                            "nombre": "Pate Con Cebolla De Cerdo",
+                            "Marca": "Cinta Azul",
+                            "Presentación": "100G",
+                            "Precio": 913,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PATE CINTA AZUL CON CEBOLLA DE CERDO 100 G.jpeg"
+                        },
+                        {
+                            "id": 111,
+                            "nombre": "Pate De Cerdo",
+                            "Marca": "FUD",
+                            "Presentación": "100G",
+                            "Precio": 626,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PATE FUD DE CERDO 100 G.jpeg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Hogar",
+            "subcategorias": [
+                {
+                    "id": 13,
+                    "nombre": "Camping",
+                    "marcas": [
+                        "Kingsford",
+                        "Bic",
+                        "Candela",
+                        "Jim Bean",
+                        "Premier",
+                        "Retana",
+                        "Adarga"
+                    ],
+                    "productos": [
+                        {
+                            "id": 113,
+                            "nombre": "Carbon Match Light",
+                            "Marca": "Kingsford",
+                            "Presentación": "5440G",
+                            "Precio": 9372,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Carbon.jpeg"
+                        },
+                        {
+                            "id": 114,
+                            "nombre": "Chispa Para Fuego",
+                            "Marca": "",
+                            "Presentación": "6UND",
+                            "Precio": 1899,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Chispa.jpeg"
+                        },
+                        {
+                            "id": 115,
+                            "nombre": "Encendedor Para Chimenea",
+                            "Marca": "Bic",
+                            "Presentación": "1UND",
+                            "Precio": 1905,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Encendedor Bic.jpeg"
+                        },
+                        {
+                            "id": 116,
+                            "nombre": "Encendedor",
+                            "Marca": "Bic",
+                            "Presentación": "Grande 1UND",
+                            "Precio": 973,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Encendedor.jpeg"
+                        },
+                        {
+                            "id": 117,
+                            "nombre": "Fosforo",
+                            "Marca": "Candela",
+                            "Presentación": "10UND 1X100",
+                            "Precio": 313,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Fosforos.jpeg"
+                        },
+                        {
+                            "id": 118,
+                            "nombre": "Set Utensilios Para Asar",
+                            "Marca": "Jim Bean",
+                            "Presentación": "3UND",
+                            "Precio": 12739,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Jim Beam.jpeg"
+                        },
+                        {
+                            "id": 119,
+                            "nombre": "Palillos para Carne",
+                            "Marca": "Premier",
+                            "Presentación": "100UND",
+                            "Precio": 945,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Palillos Chinos.jpeg"
+                        },
+                        {
+                            "id": 120,
+                            "nombre": "Parilla/Plancha Hierro Fundido",
+                            "Marca": "Jim Bean",
+                            "Presentación": "1UND",
+                            "Precio": 23243,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Parrilla.jpeg"
+                        },
+                        {
+                            "id": 121,
+                            "nombre": "Carbon Match Light",
+                            "Marca": "Kingsford",
+                            "Presentación": "5440G",
+                            "Precio": 9372,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Carbon.jpeg"
+                        },
+                        {
+                            "id": 122,
+                            "nombre": "Madera Para Ahumar",
+                            "Marca": "Retana",
+                            "Presentación": "500G",
+                            "Precio": 3818,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Retana.jpeg"
+                        },
+                        {
+                            "id": 123,
+                            "nombre": "Fuego Líquido Para Parrillas BBQ",
+                            "Marca": "Adarga",
+                            "Presentación": "360G",
+                            "Precio": 3622,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Super Fuego.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 14,
+                    "nombre": "Celebraciones",
+                    "marcas": [
+                        "Sempertex",
+                        "Pareca",
+                        "Kraft"               
+                    ],
+                    "productos": [
+                        {
+                            "id": 124,
+                            "nombre": "Globo Feliz Cumpleaños Pastel Mate",
+                            "Marca": "Sempertex",
+                            "Presentación": "12UND",
+                            "Precio": 2796,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Globos Sempertex.jpeg"
+                        },
+                        {
+                            "id": 125,
+                            "nombre": "Bolsa De Regalo Para Bebe ",
+                            "Marca": "Pareca",
+                            "Presentación": "Grande 1UND",
+                            "Precio": 1291,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Bolsa Bebe.jpeg"
+                        },
+                        {
+                            "id": 126,
+                            "nombre": "Bolsa Botella",
+                            "Marca": "Kraft",
+                            "Presentación": "12.5X 34 X 11CM",
+                            "Precio": 1616,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Bolsa de regalo.jpeg"
+                        },
+                        {
+                            "id": 127,
+                            "nombre": "Vela Feliz Cumpleaños Letras Dorado",
+                            "Marca": "Sempertex",
+                            "Presentación": "1UND",
+                            "Precio": 2261,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Candelas Feliz.jpeg"
+                        },
+                        {
+                            "id": 128,
+                            "nombre": "Vela De Cumpleaños Espiralada Surtidas",
+                            "Marca": "Sempertex",
+                            "Presentación": "24UND",
+                            "Precio": 621,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Velitas.jpeg"
+                        },
+                        {
+                            "id": 129,
+                            "nombre": "Vela De Cumpleaños Balon De Futbol",
+                            "Marca": "Sempetex",
+                            "Presentación": "6UND",
+                            "Precio": 1877,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/BolaVelas.jpeg"
+                        },
+                        {
+                            "id": 130,
+                            "nombre": "Vela De Cumpleaños Globos",
+                            "Marca": "Sempertex",
+                            "Presentación": "5UND",
+                            "Precio": 2086,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Candles Velas.jpeg"
+                        },
+                        {
+                            "id": 131,
+                            "nombre": "Vela De Cumpleaños Letras Colores Surtidos",
+                            "Marca": "Sempertex",
+                            "Presentación": "1UND",
+                            "Precio": 2130,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Velas Cumpleaños.jpeg"
+                        },
+                        {
+                            "id": 132,
+                            "nombre": "Vela Con Base De Aluminio",
+                            "Marca": "",
+                            "Presentación": "Pequeña 100UND",
+                            "Precio": 6233,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Velas circulos.jpeg"
+                        },
+                        {
+                            "id": 133,
+                            "nombre": "Porta Globos Blanco",
+                            "Marca": "",
+                            "Presentación": "20UND",
+                            "Precio": 922,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Soporte Globos.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 15,
+                    "nombre": "Escolar",
+                    "marcas": [
+                        "Maped",
+                        "Faber-Castell",
+                        "Pritt"               
+                    ],
+                    "productos": [
+                        {
+                            "id": 134,
+                            "nombre": "Lapiz De Color ",
+                            "Marca": "Maped",
+                            "Presentación": "24UND",
+                            "Precio": 2849,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Lapices de Color.jpeg"
+                        },
+                        {
+                            "id": 135,
+                            "nombre": "Tijera Sensoft 3D Comfort",
+                            "Marca": "Maped",
+                            "Presentación": "1UND",
+                            "Precio": 2079,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Tijera Maped.jpeg"
+                        },
+                        {
+                            "id": 136,
+                            "nombre": "Boligrafos",
+                            "Marca": "Faber-Castell",
+                            "Presentación": "3UND",
+                            "Precio": 1447,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Lapiceros.jpeg"
+                        },
+                        {
+                            "id": 137,
+                            "nombre": "Goma Blanca ",
+                            "Marca": "Pritt",
+                            "Presentación": "55G",
+                            "Precio": 952,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Goma Pritt.jpeg"
+                        },
+                        {
+                            "id": 138,
+                            "nombre": "Tajador 2 Orificios Fucsia",
+                            "Marca": "Maped",
+                            "Presentación": "1UND",
+                            "Precio": 650,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Maquinilla.jpeg"
+                        },
+                        {
+                            "id": 139,
+                            "nombre": "Regla Twistn Flex",
+                            "Marca": "Maped",
+                            "Presentación": "30 CMS",
+                            "Precio": 696,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Regla.jpeg"
+                        },
+                        {
+                            "id": 140,
+                            "nombre": "Borrador Blanco Gom Stick ",
+                            "Marca": "Maped",
+                            "Presentación": "1UND",
+                            "Precio": 873,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Borrador.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 16,
+                    "nombre": "Jardineria",
+                    "marcas": [
+                        "Gardena",
+                        "Omitox",
+                        "Evergreen"               
+                    ],
+                    "productos": [
+                        {
+                            "id": 141,
+                            "nombre": "Lanza Para Manguera Multichorro",
+                            "Marca": "Gardena",
+                            "Presentación": "1UND",
+                            "Precio": 6795,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Lanza Manguera.jpeg"
+                        },
+                        {
+                            "id": 142,
+                            "nombre": "Cebo Granulado Contra Hormigas",
+                            "Marca": "Omitox",
+                            "Presentación": "250G",
+                            "Precio": 2763,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Granulado.jpeg"
+                        },
+                        {
+                            "id": 143,
+                            "nombre": "Abono Organico",
+                            "Marca": "Evergreen",
+                            "Presentación": "2500G",
+                            "Precio": 1644,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Abono.jpeg"
+                        },
+                        {
+                            "id": 144,
+                            "nombre": "Plaguicida Mata Hormigas e Insectos ",
+                            "Marca": "Evergreen",
+                            "Presentación": "1000ML",
+                            "Precio": 4351,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Plaguicida.jpeg"
+                        },
+                        {
+                            "id": 145,
+                            "nombre": "Conector Stop Para Manguera",
+                            "Marca": "Gardena",
+                            "Presentación": "13-15MM 1UND",
+                            "Precio": 873,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Boquilla Agua.jpeg"
+                        },
+                        {
+                            "id": 146,
+                            "nombre": "Conector Rapido Para Manguera ",
+                            "Marca": "Gardena",
+                            "Presentación": "13-15MM 1UND",
+                            "Precio": 4733,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Boquilla Agua Blanca.jpeg"
+                        },
+                        {
+                            "id": 147,
+                            "nombre": "Fertilizante",
+                            "Marca": "Evergreen",
+                            "Presentación": "500G",
+                            "Precio": 4393,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Fertilizante.jpeg"
+                        }
+                    ]
+                }    
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "Limpieza",
+            "subcategorias": [
+                {
+                    "id": 17,
+                    "nombre": "Fibras y Esponjas",
+                    "marcas": [
+                        "Contraste",
+                        "Klins",
+                        "La Negrita",
+                        "Scotch-Brite",
+                        "Weiman"
+                    ],
+                    "productos": [
+                        {
+                            "id": 148,
+                            "nombre": "Alambrina Acero Galvanizado",
+                            "Marca": "Contraste",
+                            "Presentación": "Mediana 15G",
+                            "Precio": 575,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALAMBRINA CONTRASTE.png"
+                        },
+                        {
+                            "id": 149,
+                            "nombre": "Alambrina Inoxidable ",
+                            "Marca": "Contraste",
+                            "Presentación": "40G",
+                            "Precio": 668,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALAMBRINA CONTRASTE INOXIDABLE.png"
+                        },
+                        {
+                            "id": 150,
+                            "nombre": "Esponja",
+                            "Marca": "Contraste",
+                            "Presentación": "2UND",
+                            "Precio": 1299,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ESPONJA CONTRASTE.png"
+                        },
+                        {
+                            "id": 151,
+                            "nombre": "Esponja",
+                            "Marca": "Klins",
+                            "Presentación": "1UND",
+                            "Precio": 1107,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ESPONJA KLINS.png"
+                        },
+                        {
+                            "id": 152,
+                            "nombre": "Esponja ",
+                            "Marca": "La Negrita",
+                            "Presentación": "1UND",
+                            "Precio": 505,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ESPONJA LA NEGRITA.png"
+                        },
+                        {
+                            "id": 153,
+                            "nombre": "Esponja ",
+                            "Marca": "Scotch-Brite",
+                            "Presentación": "2UND",
+                            "Precio": 1583,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ESPONJA SCOTCH BRITE CERO RAYA.png"
+                        },
+                        {
+                            "id": 154,
+                            "nombre": "Esponja",
+                            "Marca": "Scotch-Brite",
+                            "Presentación": "3UND",
+                            "Precio": 2632,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ESPONJA SCOTCH BRITE.png"
+                        },
+                        {
+                            "id": 155,
+                            "nombre": "Esponja Para Vitroceramica ",
+                            "Marca": "Weiman",
+                            "Presentación": "1UND",
+                            "Precio": 2531,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ESPONJA WEIMAN PARA VITROCERAMICA.png"
+                        },
+                        {
+                            "id": 156,
+                            "nombre": "Paño Esponja ",
+                            "Marca": "Contraste",
+                            "Presentación": "40G",
+                            "Precio": 2177,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PAÑO ESPONJA CONTRASTE.png"
+                        },
+                        {
+                            "id": 157,
+                            "nombre": "Paño Esponja ",
+                            "Marca": "Scotch-Brite",
+                            "Presentación": "18CM X 20CM",
+                            "Precio": 769,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PAÑO ESPONJA SCOTCH.png"
+                        }
+                    ]
+                },
+                {
+                    "id": 18,
+                    "nombre": "Lavaplatos",
+                    "marcas": [
+                        "Axion",
+                        "Irex",
+                        "Joy Ultra",
+                        "Klins",
+                        "Lemon Tok"
+                    ],
+                    "productos": [
+                        {
+                            "id": 158,
+                            "nombre": "Lavaplatos Liquidos Limon",
+                            "Marca": "Axion",
+                            "Presentación": "1400ML",
+                            "Precio": 4181,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/AXION 1400 ml.png"
+                        },
+                        {
+                            "id": 159,
+                            "nombre": "Lavaplatos Avena",
+                            "Marca": "Axion",
+                            "Presentación": "850G",
+                            "Precio": 2201,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/AXION 750 g.png"
+                        },
+                        {
+                            "id": 160,
+                            "nombre": "Lavaplatox Coco Con Glicerina",
+                            "Marca": "Irex",
+                            "Presentación": "1000G",
+                            "Precio": 1400,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/IREX 1000 g.png"
+                        },
+                        {
+                            "id": 161,
+                            "nombre": "Lavaplatos Cilindro",
+                            "Marca": "Irex",
+                            "Presentación": "130G",
+                            "Precio": 338,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/IREX 130 g.png"
+                        },
+                        {
+                            "id": 162,
+                            "nombre": "Lavaplatos Cilindro",
+                            "Marca": "Irex",
+                            "Presentación": "3 UND 540G",
+                            "Precio": 1162,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/IREX 540 g.png"
+                        },
+                        {
+                            "id": 163,
+                            "nombre": "Lavaplatos Esencia Limón",
+                            "Marca": "Joy Ultra ",
+                            "Presentación": "2066ML",
+                            "Precio": 6204,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JOY  2066 ML.png"
+                        },
+                        {
+                            "id": 164,
+                            "nombre": "Lavaplatos Limón ",
+                            "Marca": "Klins",
+                            "Presentación": "1000G",
+                            "Precio": 1867,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/KLINS 600 G.png"
+                        },
+                        {
+                            "id": 165,
+                            "nombre": "Lavaplatos Liquido",
+                            "Marca": "Lemon Tok",
+                            "Presentación": "675ML",
+                            "Precio": 2215,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/LEMON  675 ml.png"
+                        }
+                    ]
+                },
+                {
+                    "id": 19,
+                    "nombre": "Jabon En Barra",
+                    "marcas": [
+                        "IDEAL",
+                        "MonteAzul",
+                        "San Luis",
+                        "Zote"
+                    ],
+                    "productos": [
+                        {
+                            "id": 166,
+                            "nombre": "Jabón En Barra",
+                            "Marca": "IDEAL",
+                            "Presentación": "400G",
+                            "Precio": 947,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/KLINS 600 G.png"
+                        },
+                        {
+                            "id": 167,
+                            "nombre": "Jabón Media Barra",
+                            "Marca": "IDEAL",
+                            "Presentación": "200G",
+                            "Precio": 501,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Jabon Ideal.jpeg"
+                        },
+                        {
+                            "id": 168,
+                            "nombre": "Jabón Blanco En Bola",
+                            "Marca": "MonteAzul",
+                            "Presentación": "960G",
+                            "Precio": 1874,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Jabon Ideal Media.jpeg"
+                        },
+                        {
+                            "id": 169,
+                            "nombre": "Jabón Veteado",
+                            "Marca": "MonteAzul",
+                            "Presentación": "400G",
+                            "Precio": 809,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Jabon Monteazul.jpeg"
+                        },
+                        {
+                            "id": 170,
+                            "nombre": "Jabón Azul",
+                            "Marca": "San Luis",
+                            "Presentación": "200G",
+                            "Precio": 638,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JABÓN SAN LUIS AZUL.png"
+                        },
+                        {
+                            "id": 171,
+                            "nombre": "Jabón Rosa",
+                            "Marca": "Zote",
+                            "Presentación": "400G",
+                            "Precio": 2138,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JABÓN ZOTE.png"
+                        },
+                        {
+                            "id": 172,
+                            "nombre": "Jabón Media Barra",
+                            "Marca": "IDEAL",
+                            "Presentación": "200G",
+                            "Precio": 501,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Jabon Ideal Media.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 20,
+                    "nombre": "Control De Plagas",
+                    "marcas": [
+                        "Baygon",
+                        "Ecosmart",
+                        "Mortein",
+                        "Raid",
+                        "Evergreen",
+                        "Gala"
+                    ],
+                    "productos": [
+                        {
+                            "id": 173,
+                            "nombre": "Insecticida Ultra Verde",
+                            "Marca": "Baygon",
+                            "Presentación": "285ML",
+                            "Precio": 2772,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/INSECTICIDA BAYGON 285 ml.png"
+                        },
+                        {
+                            "id": 174,
+                            "nombre": "Insecticida Total",
+                            "Marca": "Baygon",
+                            "Presentación": "460G",
+                            "Precio": 3060,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/INSECTICIDA BAYGON 460.png"
+                        },
+                        {
+                            "id": 175,
+                            "nombre": "Insecticida Organico",
+                            "Marca": "Ecosmart",
+                            "Presentación": "396G",
+                            "Precio": 3556,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/INSECTICIDA ECOSMART.png"
+                        },
+                        {
+                            "id": 176,
+                            "nombre": "Insecticida Multi Insectos",
+                            "Marca": "Mortein",
+                            "Presentación": "300ML",
+                            "Precio": 2257,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/INSECTICIDA MORTEIN 300 ML.png"
+                        },
+                        {
+                            "id": 177,
+                            "nombre": "Insecticida Multi Insectos",
+                            "Marca": "Mortein",
+                            "Presentación": "450ML",
+                            "Precio": 5032,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/INSECTICIDA MORTEIN 450 ML.png"
+                        },
+                        {
+                            "id": 178,
+                            "nombre": "Insecticida Casa y Jardin Naranja",
+                            "Marca": "Raid",
+                            "Presentación": "450ML",
+                            "Precio": 4248,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/INSECTICIDA RAID.png"
+                        },
+                        {
+                            "id": 179,
+                            "nombre": "Mezcla Milagrosa",
+                            "Marca": "Evergreen",
+                            "Presentación": "3X1 1000ML",
+                            "Precio": 5907,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/MEZCLA EVERGREEN.png"
+                        },
+                        {
+                            "id": 180,
+                            "nombre": "Plaquitas Respuesto Econopack",
+                            "Marca": "Baygon",
+                            "Presentación": "8UND",
+                            "Precio": 1003,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PLAQUITAS BAYGON.png"
+                        },
+                        {
+                            "id": 181,
+                            "nombre": "Repelente De Insectos En Espiral",
+                            "Marca": "Gala",
+                            "Presentación": "12UND",
+                            "Precio": 2257,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/REPELENTE GALA EN ESPIRAL.png"
+                        }
+                    ]
+                },
+                {
+                    "id": 21,
+                    "nombre": "Desifectantes y Limpiadores",
+                    "marcas": [
+                        "Fabuloso",
+                        "Pledge",
+                        "Pato",
+                        "AJAX",
+                        "Brasso",
+                        "Dr.Beckmann",
+                        "Easy-Off"
+                    ],
+                    "productos": [
+                        {
+                            "id": 182,
+                            "nombre": "Desifectante Aroma Fresca Primavera",
+                            "Marca": "Fabuloso",
+                            "Presentación": "900ML",
+                            "Precio": 1148,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/DESINFECTANTE FABULOSO 900 ML.png"
+                        },
+                        {
+                            "id": 183,
+                            "nombre": "Desifectante Aroma Citricos y Frutas",
+                            "Marca": "Fabuloso",
+                            "Presentación": "750ML",
+                            "Precio": 921,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/DESINFECTANTE FABULOSO 750 ML.png"
+                        },
+                        {
+                            "id": 184,
+                            "nombre": "Cera Genie En Pasta ",
+                            "Marca": "Pledge",
+                            "Presentación": "140G",
+                            "Precio": 1362,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cera pledge.png"
+                        },
+                        {
+                            "id": 185,
+                            "nombre": "Cera Klaro Cremosa",
+                            "Marca": "Pledge",
+                            "Presentación": "350ML",
+                            "Precio": 2101,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cera Klaro pledge.png"
+                        },
+                        {
+                            "id": 186,
+                            "nombre": "Discos Gel",
+                            "Marca": "Pato",
+                            "Presentación": "36ML",
+                            "Precio": 4495,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/DISCOS ACTIVOS PATO.png"
+                        },
+                        {
+                            "id": 187,
+                            "nombre": "Limpiador Triclorin",
+                            "Marca": "AJAX",
+                            "Presentación": "600G",
+                            "Precio": 2037,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/LIMPIADOR AJAX.png"
+                        },
+                        {
+                            "id": 188,
+                            "nombre": "Limpiador Antigrasa",
+                            "Marca": "Brasso",
+                            "Presentación": "500ML",
+                            "Precio": 1770,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Limpiador Brasso.jpeg"
+                        },
+                        {
+                            "id": 189,
+                            "nombre": "Limpiador De Sanitario",
+                            "Marca": "Pato",
+                            "Presentación": "12UND 72ML",
+                            "Precio": 4972,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Limpiador Pato.jpeg"
+                        },
+                        {
+                            "id": 190,
+                            "nombre": "Limpiador Para Refrigeradoras",
+                            "Marca": "Dr.Beckmann",
+                            "Presentación": "250ml",
+                            "Precio": 2812,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Limpiador Beckmann.jpeg"
+                        },
+                        {
+                            "id": 191,
+                            "nombre": "Limpiador Para Hornos y Parrilas",
+                            "Marca": "Easy-Off",
+                            "Presentación": "238G",
+                            "Precio": 6664,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Limpiador Easy off.jpeg"
+                        }
+                    ]
+                }    
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Mascotas",
+            "subcategorias": [
+                {
+                    "id": 22,
+                    "nombre": "Accesorios Para Mascotas",
+                    "marcas": [
+                        "Spunky Pup",
+                        "Kitti Swat",
+                        "SanRemo"
+                    ],
+                    "productos": [
+                        {
+                            "id": 192,
+                            "nombre": "Cama Para Mascota",
+                            "Marca": "",
+                            "Presentación": "1UND",
+                            "Precio": 4934,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/CAMA PARA MASCOTA ROJASOL.png"
+                        },
+                        {
+                            "id": 193,
+                            "nombre": "Cama Para Mascota",
+                            "Marca": "",
+                            "Presentación": "1UND",
+                            "Precio": 6908,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/CAMA PARA MASCOTA NO ESPECIFICADA.png"
+                        },
+                        {
+                            "id": 194,
+                            "nombre": "Cama Para Mascota",
+                            "Marca": "",
+                            "Presentación": "1UND",
+                            "Precio": 5187,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/CAMA PARA NO ESPECIFICADA MASCOTA.png"
+                        },
+                        {
+                            "id": 195,
+                            "nombre": "Bolas De Tennis",
+                            "Marca": "Spunky Pup",
+                            "Presentación": "3UND",
+                            "Precio": 4226,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JUGUETE DE MASCOTA SPUNKY PUP.png"
+                        },
+                        {
+                            "id": 196,
+                            "nombre": "Juguete Para Gato",
+                            "Marca": "Kitti Swat",
+                            "Presentación": "1UND",
+                            "Precio": 3639,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JUGUETE PARA GATO RUFFINIT.png"
+                        },
+                        {
+                            "id": 197,
+                            "nombre": "Bola Futbol Americano",
+                            "Marca": "Spunky Pup",
+                            "Presentación": "1UND",
+                            "Precio": 5994,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JUGUETE PARA MASCOTA SPUNKY.png"
+                        },
+                        {
+                            "id": 198,
+                            "nombre": "Juguete Para Cuidado De Dientes",
+                            "Marca": "Spunky Pup",
+                            "Presentación": "1UND",
+                            "Precio": 5280,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JUGUETE PARA MASCOTA SPUNKY PUP.png"
+                        },
+                        {
+                            "id": 199,
+                            "nombre": "Plato Para Macota ",
+                            "Marca": "SanRemo",
+                            "Presentación": "650ML 1UND",
+                            "Precio": 1442,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PLATO PARA MASCOTA SAN REMO.png"
+                        },
+                        {
+                            "id": 200,
+                            "nombre": "Plato Para Mascota",
+                            "Marca": "SanRemo",
+                            "Presentación": "1800ML 1UND",
+                            "Precio": 3366,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PLATO PARA MASCOTA.png"
+                        },
+                        {
+                            "id": 201,
+                            "nombre": "Plato Para Mascota",
+                            "Marca": "SanRemo",
+                            "Presentación": "1800ML 1UND",
+                            "Precio": 3806,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/PLATO PARA MASCOTA SAN REMO COLOR ROSADO.png"
+                        }
+                    ]
+                },
+                {
+                    "id": 23,
+                    "nombre": "Alimento Para Gato",
+                    "marcas": [
+                        "Don Gato",
+                        "Purina",
+                        "Whiskas",
+                        "Gati"
+                    ],
+                    "productos": [
+                        {
+                            "id": 202,
+                            "nombre": "Alimento",
+                            "Marca": "Don Gato",
+                            "Presentación": "450G",
+                            "Precio": 1186,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO DON GATO.png"
+                        },
+                        {
+                            "id": 203,
+                            "nombre": "Alimento Trocitos De Pollos",
+                            "Marca": "Purina",
+                            "Presentación": "156G",
+                            "Precio": 1153,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA GATO CHOW.png"
+                        },
+                        {
+                            "id": 204,
+                            "nombre": "Alimento Fillets Atún",
+                            "Marca": "Whiskas",
+                            "Presentación": "85G",
+                            "Precio": 668,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO HÚMEDO WHISKAS.png"
+                        },
+                        {
+                            "id": 205,
+                            "nombre": "Alimento",
+                            "Marca": "Purina",
+                            "Presentación": "1500G",
+                            "Precio": 6350,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA GATO CAT.png"
+                        },
+                        {
+                            "id": 206,
+                            "nombre": "Alimento Para Adulto",
+                            "Marca": "Purina",
+                            "Presentación": "500G",
+                            "Precio": 2485,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA GATO CAT CHOW.png"
+                        },
+                        {
+                            "id": 207,
+                            "nombre": "Alimento Para Cachorros",
+                            "Marca": "Purina",
+                            "Presentación": "1500G",
+                            "Precio": 6535,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA GATO GATI PESCADO.png"
+                        },
+                        {
+                            "id": 208,
+                            "nombre": "Alimento Para Adulto",
+                            "Marca": "Don Gato",
+                            "Presentación": "1000G",
+                            "Precio": 2192,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA GATO DON GATO ADULTO.png"
+                        },
+                        {
+                            "id": 209,
+                            "nombre": "Paté De Salmón",
+                            "Marca": "Purina",
+                            "Presentación": "156G",
+                            "Precio": 1153,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA GATO FELIX PATÉ.png"
+                        },
+                        {
+                            "id": 210,
+                            "nombre": "Alimento Mar y Tierra Adulto",
+                            "Marca": "Gati",
+                            "Presentación": "454G",
+                            "Precio": 1801,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA GATO DON GATO ADULTO.png"
+                        }
+                    ]
+                },
+                {
+                    "id": 24,
+                    "nombre": "Alimento Para Perro",
+                    "marcas": [
+                        "Pedigree",
+                        "Purina",
+                        "Ascan",
+                        "Kan Kan"
+                    ],
+                    "productos": [
+                        {
+                            "id": 211,
+                            "nombre": "Alimento Raza Pequeña",
+                            "Marca": "Purina",
+                            "Presentación": "1000G",
+                            "Precio": 4129,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA PERRO BENEFUL PURINA.png"
+                        },
+                        {
+                            "id": 212,
+                            "nombre": "Alimento Pollo & Carne Para Cachorro",
+                            "Marca": "Pedigree",
+                            "Presentación": "375G",
+                            "Precio": 1675,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Alimento Perro Pedigree.jpeg"
+                        },
+                        {
+                            "id": 213,
+                            "nombre": "Alimento Recetas Caceras Adulto",
+                            "Marca": "Purina",
+                            "Presentación": "20000G",
+                            "Precio": 34.883,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Alimento perro purina.jpeg"
+                        },
+                        {
+                            "id": 214,
+                            "nombre": "Alimento Adulto",
+                            "Marca": "Ascan",
+                            "Presentación": "4KG",
+                            "Precio": 8448,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA PERRO ASCAN.png"
+                        },
+                        {
+                            "id": 215,
+                            "nombre": "Alimento Adulto",
+                            "Marca": "Ascan",
+                            "Presentación": "1000G",
+                            "Precio": 1857,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA PERRO ASCAN ADULTO.png"
+                        },
+                        {
+                            "id": 216,
+                            "nombre": "Alimento Cachorro",
+                            "Marca": "Ascan",
+                            "Presentación": "2000G",
+                            "Precio": 4854,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA PERRO ASCAN RAZA PEQUEÑA.png"
+                        },
+                        {
+                            "id": 217,
+                            "nombre": "Alimento Raza Pequeña Adulto",
+                            "Marca": "Ascan",
+                            "Presentación": "2000G",
+                            "Precio": 4365,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA PERRO ASCAN CACHORRO.png"
+                        },
+                        {
+                            "id": 218,
+                            "nombre": "Alimento Adulto",
+                            "Marca": "Purina",
+                            "Presentación": "2000G",
+                            "Precio": 8237,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA PERRO DOG CHAW.png"
+                        },
+
+                        {
+                            "id": 219,
+                            "nombre": "Alimento Adulto",
+                            "Marca": "Kan Kan",
+                            "Presentación": "1000G",
+                            "Precio": 1390,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALIMENTO PARA PERRO KAN KAN.png"
+                        }
+                    ]     
+                },
+                {
+                    "id": 25,
+                    "nombre": "Cuidado De Mascota",
+                    "marcas": [
+                        "EASYGROOM",
+                        "Thxpet",
+                        "Fresh Step",
+                        "Tidy Cats",
+                        "Earth Rated",
+                        "Asuntol",
+                        "Pro Pet"
+                    ],
+                    "productos": [
+                        {
+                            "id": 220,
+                            "nombre": "Acondicionador Sabila",
+                            "Marca": "EASYGROOM",
+                            "Presentación": "300ML",
+                            "Precio": 4312,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ACONDICIONADOR EASYGROOM SABILA PERRO.png"
+                        },
+                        {
+                            "id": 221,
+                            "nombre": "Almohadillas De Entrenamiento",
+                            "Marca": "Thxpet",
+                            "Presentación": "30UND",
+                            "Precio": 5620,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ALMOHADILLAS THXPET ABSORBENTE.png"
+                        },
+                        {
+                            "id": 222,
+                            "nombre": "Arena Para Gato",
+                            "Marca": "Fresh Step",
+                            "Presentación": "3170G",
+                            "Precio": 3818,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ARENA PARA GATO FRESH STEP.png"
+                        },
+                        {
+                            "id": 223,
+                            "nombre": "Arena Para Gato",
+                            "Marca": "Tidy Cats",
+                            "Presentación": "4540G",
+                            "Precio": 5127,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/ARENA PARA GATO TIDY CATS.png"
+                        },
+                        {
+                            "id": 224,
+                            "nombre": "Dispensador De Bolsas",
+                            "Marca": "Earth Rated",
+                            "Presentación": "15UND",
+                            "Precio": 2641,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/DISPENSADOR DE BOLSAS EARTH RATED.png"
+                        },
+                        {
+                            "id": 225,
+                            "nombre": "Jabón Para Perro",
+                            "Marca": "Asuntol",
+                            "Presentación": "100G",
+                            "Precio": 2173,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JABÓN ASUNTOL PARA PERRO.png"
+                        },
+                        {
+                            "id": 226,
+                            "nombre": "Jabón Pulguicida",
+                            "Marca": "Pro Pet",
+                            "Presentación": "100G",
+                            "Precio": 1429,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/JABÓN PRO-PET PULGUICIDA.png"
+                        },
+                        {
+                            "id": 227,
+                            "nombre": "Shampoo",
+                            "Marca": "EASYGROOM",
+                            "Presentación": "300G",
+                            "Precio": 4312,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/SHAMPOO EASYGROOM COCO PERRO.png"
+                        },
+
+                        {
+                            "id": 228,
+                            "nombre": "Shampoo",
+                            "Marca": "EASYGROOM",
+                            "Presentación": "300G",
+                            "Precio": 3553,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Shampoo Easygroom.jpeg"
+                        }
+                    ]   
+                },
+                {
+                    "id": 26,
+                    "nombre": "Snacks",
+                    "marcas": [
+                        "Purina",
+                        "Crupis",
+                        "Dental Care",
+                        "Compa"
+                    ],
+                    "productos": [
+                        {
+                            "id": 229,
+                            "nombre": "Bocadillos Para Perro",
+                            "Marca": "Purina",
+                            "Presentación": "85G",
+                            "Precio": 1500,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/BOCADILLOS PARA PERRO BEGGIN STRIPS.png"
+                        },
+                        {
+                            "id": 230,
+                            "nombre": "Chuletitas",
+                            "Marca": "Crupis",
+                            "Presentación": "170G",
+                            "Precio": 1420,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Chuletitas Crupis.jpeg"
+                        },
+                        {
+                            "id": 231,
+                            "nombre": "Rollos De Carne y Tocineta",
+                            "Marca": "Crupis",
+                            "Presentación": "170G",
+                            "Precio": 1426,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Rollitos de carne crupis.jpeg"
+                        },
+                        {
+                            "id": 232,
+                            "nombre": "Huesitos Sabor Carne y Tocino",
+                            "Marca": "Crupis",
+                            "Presentación": "170G",
+                            "Precio": 1417,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Huesitos carne crupis.jpeg"
+                        },
+                        {
+                            "id": 233,
+                            "nombre": "Trocitos Sabor Carne y Tocino",
+                            "Marca": "Crupis",
+                            "Presentación": "170G",
+                            "Precio": 1420,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Trocitos carne crupis.jpeg"
+                        },
+                        {
+                            "id": 234,
+                            "nombre": "Bocadillos Sabor Tocinetas",
+                            "Marca": "Crupis",
+                            "Presentación": "85G",
+                            "Precio": 920,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Tocinetas crupis.jpeg"
+                        },
+                        {
+                            "id": 235,
+                            "nombre": "Bocadillos",
+                            "Marca": "Dental Care",
+                            "Presentación": "170G",
+                            "Precio": 1420,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Bocadillo dental care.jpeg"
+                        },
+                        {
+                            "id": 236,
+                            "nombre": "Carnaza Dona Ring ",
+                            "Marca": "Compa",
+                            "Presentación": "1UND",
+                            "Precio": 1765,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Carnaza compa.jpeg"
+                        },
+                        {
+                            "id": 237,
+                            "nombre": "Galleta De Pollo",
+                            "Marca": "Compa",
+                            "Presentación": "100G",
+                            "Precio": 2445,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Galleta pollo compa.jpeg"
+                        }
+                    ]
+                }    
+            ]
+        },
+        {
+            "id": 6,
+            "nombre": "Licores",
+            "subcategorias": [
+                {
+                    "id": 27,
+                    "nombre": "Cervezas",
+                    "marcas": [
+                        "BamBoo",
+                        "Bavaria",
+                        "Imperial",
+                        "Rock Limon",
+                        "Milwaukees Best",
+                        "Pilsen",
+                        "Four Loko",
+                        "Ambar"
+                    ],
+                    "productos": [
+                        {
+                            "id": 238,
+                            "nombre": "Bebida Alcohólica",
+                            "Marca": "BamBoo",
+                            "Presentación": "Lata 350ML",
+                            "Precio": 900,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/bamboo.jpeg"
+                        },
+                        {
+                            "id": 239,
+                            "nombre": "Bebida Alcohólica",
+                            "Marca": "BamBoo",
+                            "Presentación": "Lata 473ML",
+                            "Precio": 1150,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/bamboo daiquiri.jpeg"
+                        },
+                        {
+                            "id": 240,
+                            "nombre": "Cerveza Master Edition",
+                            "Marca": "Bavaria",
+                            "Presentación": "Lata 85G",
+                            "Precio": 950,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/bavaria.jpeg"
+                        },
+                        {
+                            "id": 241,
+                            "nombre": "Cerveza Silver ",
+                            "Marca": "Imperial",
+                            "Presentación": "Botella 1000ML",
+                            "Precio": 1500,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Imperial.jpeg"
+                        },
+                        {
+                            "id": 242,
+                            "nombre": "Cerveza",
+                            "Marca": "Rock Limon",
+                            "Presentación": "Lata 350Ml",
+                            "Precio": 949,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Rock Limon.jpeg"
+                        },
+                        {
+                            "id": 243,
+                            "nombre": "Cerveza Miller",
+                            "Marca": "Milwaukees Best",
+                            "Presentación": "355ML",
+                            "Precio": 683,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Milwaukees.jpeg"
+                        },
+                        {
+                            "id": 244,
+                            "nombre": "Cerveza ",
+                            "Marca": "Pilsen",
+                            "Presentación": "Vidrio 1000ML",
+                            "Precio": 1500,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Pilsen 1000ml.jpeg"
+                        },
+                        {
+                            "id": 245,
+                            "nombre": "Bebida Alcohólica Blue",
+                            "Marca": "Four Loko",
+                            "Presentación": "Lata 473ML",
+                            "Precio": 2378,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Four loko 473ml.jpeg"
+                        },
+                        {
+                            "id": 246,
+                            "nombre": "Cerveza Artesanal light",
+                            "Marca": "Ambar",
+                            "Presentación": "Vidrio 350ML",
+                            "Precio": 1254,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Ambar cerveza.jpeg"
+                        }
+                    ]    
+                },
+                {
+                    "id": 28,
+                    "nombre": "Bebidas Alcoholicas",
+                    "marcas": [
+                        "Centenario",
+                        "Cacique",
+                        "Capitan Morgan",
+                        "Colorado",
+                        "Ambar",
+                        "Ronrico",
+                        "Campari",
+                        "Bacardí",
+                        "Baileys"
+                    ],
+                    "productos": [
+                        {
+                            "id": 247,
+                            "nombre": "Ron Premium 20 Años",
+                            "Marca": "Centenario",
+                            "Presentación": "750ML",
+                            "Precio": 30965,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Centenario 20.jpeg"
+                        },
+                        {
+                            "id": 248,
+                            "nombre": "Guaro",
+                            "Marca": "Cacique",
+                            "Presentación": "Vidrio 1000ML",
+                            "Precio": 5597,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cacique.jpg"
+                        },
+                        {
+                            "id": 249,
+                            "nombre": "Ron",
+                            "Marca": "Capitan Morgan",
+                            "Presentación": "Vidrio 1000ML",
+                            "Precio": 11530,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Captain Morgan.jpeg"
+                        },
+                        {
+                            "id": 250,
+                            "nombre": "Ron",
+                            "Marca": "Colorado",
+                            "Presentación": "Vidrio 1000ML",
+                            "Precio": 5858,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Colorado.jpeg"
+                        },
+                        {
+                            "id": 251,
+                            "nombre": "Cerveza Artesanal light",
+                            "Marca": "Ambar",
+                            "Presentación": "Vidrio 350ML",
+                            "Precio": 1254,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Ambar cerver.jpeg"
+                        },
+                        {
+                            "id": 252,
+                            "nombre": "Guaro Superior Negro",
+                            "Marca": "Cacique",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 4929,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cacique.jpg"
+                        },
+                        {
+                            "id": 253,
+                            "nombre": "Ron Añejo reserva",
+                            "Marca": "Ronrico",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 5903,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Ronrico reserva.jpeg"
+                        },
+                        {
+                            "id": 254,
+                            "nombre": "Licor De Hierbas",
+                            "Marca": "Campari",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 19126,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Campari licor.jpeg"
+                        },
+                        {
+                            "id": 255,
+                            "nombre": "Coctel Ligao Reserva Frutal",
+                            "Marca": "Cacique",
+                            "Presentación": "Vidrio 1000ML",
+                            "Precio": 4541,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cacique Sandia.jpg"
+                        },
+                        {
+                            "id": 256,
+                            "nombre": "Ron Superior",
+                            "Marca": "Bacardí",
+                            "Presentación": "Vidrio 980ML",
+                            "Precio": 8947,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Bacardi ron superior.jpeg"
+                        },
+                        {
+                            "id": 257,
+                            "nombre": "Crema Irlandesa",
+                            "Marca": "Baileys",
+                            "Presentación": "Vidrio 1000ML",
+                            "Precio": 14800,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Baileys 1000ml.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 29,
+                    "nombre": "Vinos",
+                    "marcas": [
+                        "Nox Pinord",
+                        "Catena",
+                        "Trapiche",
+                        "Beringer",
+                        "Carmen",
+                        "Frontera",
+                        "Kaiken Malbec",
+                        "Welchs Sparkling",
+                        "Woodbridge Mondavi"
+                    ],
+                    "productos": [
+                        {
+                            "id": 258,
+                            "nombre": "Vino Tinto",
+                            "Marca": "Nox Pinord",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 7701,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Nox.jpeg"
+                        },
+                        {
+                            "id": 259,
+                            "nombre": "Vino Tinto",
+                            "Marca": "Catena",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 16104,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Catena.jpeg"
+                        },
+                        {
+                            "id": 260,
+                            "nombre": "Vino Tinto",
+                            "Marca": "Trapiche",
+                            "Presentación": "Vidrio 1000ML",
+                            "Precio": 6061,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Trapiche.jpeg"
+                        }, 
+                        {
+                            "id": 261,
+                            "nombre": "Vino Tinto",
+                            "Marca": "Beringer",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 15830,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Beringer.jpeg"
+                        },
+                        {
+                            "id": 262,
+                            "nombre": "Vino Tinto",
+                            "Marca": "Carmen",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 15554,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Carmen.jpeg"
+                        },
+                        {
+                            "id": 263,
+                            "nombre": "Vino Rosado",
+                            "Marca": "Frontera",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 4250,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Frontera rosado.jpeg"
+                        },
+                        {
+                            "id": 264,
+                            "nombre": "Vino Tinto",
+                            "Marca": "Kaiken Malbec",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 17426,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Malbec Kaiken.jpeg"
+                        },
+                        {
+                            "id": 265,
+                            "nombre": "Jugo Uva Blanca",
+                            "Marca": "Welchs Sparkling",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 5200,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Welchs uva blanca.jpeg"
+                        },
+                        {
+                            "id": 266,
+                            "nombre": "Jugo Uva Roja",
+                            "Marca": "Welchs Sparkling",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 5200,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Welchs uva roja.jpeg"
+                        },
+                        {
+                            "id": 267,
+                            "nombre": "Vino Tinto",
+                            "Marca": "Woodbridge Mondavi",
+                            "Presentación": "Vidrio 750ML",
+                            "Precio": 8086,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Mondavi vino rojo.jpeg"
+                        } 
+                    ]
+                }   
+            ] 
+        },
+        {
+            "id": 7,
+            "nombre": "Cuidado Personal",
+            "subcategorias": [
+                {
+                    "id": 30,
+                    "nombre": "Afeitado y Depilacion",
+                    "marcas": [
+                        "Nivea",
+                        "Veet",
+                        "Gillete",
+                        "Barbasol",
+                        "Pure Silk"
+                    ],
+                    "productos": [
+                        {
+                            "id": 268,
+                            "nombre": "Balsamo After Shave",
+                            "Marca": "Nivea",
+                            "Presentación": "100ML",
+                            "Precio": 8913,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/After Shave Nivea.jpeg"
+                        },
+                        {
+                            "id": 269,
+                            "nombre": "Bandas Depilatorias",
+                            "Marca": "Veet",
+                            "Presentación": "12UND",
+                            "Precio": 10755,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Bandas Depilatorias veet.jpeg"
+                        },
+
+                        {
+                            "id": 270,
+                            "nombre": "Cartuchos Para Afeitar",
+                            "Marca": "Gillete",
+                            "Presentación": "2UND",
+                            "Precio": 11795,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cartuchos Para Afeitar.jpeg"
+                        },
+                        {
+                            "id": 271,
+                            "nombre": "Crema De Afeitar",
+                            "Marca": "Barbasol",
+                            "Presentación": "57G",
+                            "Precio": 1901,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Crema Afeitar Barbasol.jpeg"
+                        },
+                        {
+                            "id": 272,
+                            "nombre": "Crema Depilatoria",
+                            "Marca": "Veet",
+                            "Presentación": "100ML",
+                            "Precio": 8328,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Crema Depiladora VeetmPiel.jpeg"
+                        },
+                        {
+                            "id": 273,
+                            "nombre": "Espuma De Afeitar",
+                            "Marca": "Barbasol",
+                            "Presentación": "283G",
+                            "Precio": 3684,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Espuma Afeitar Barbasol.jpeg"
+                        },
+                        {
+                            "id": 274,
+                            "nombre": "Espuma De Afeitar",
+                            "Marca": "Pure Silk",
+                            "Presentación": "64G",
+                            "Precio": 1793,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Espuma Afeitar Pure Silk.jpeg"
+                        },
+                        {
+                            "id": 275,
+                            "nombre": "Espuma DE Afeitar",
+                            "Marca": "Pure Silk",
+                            "Presentación": "206G",
+                            "Precio": 4923,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Espuma Afeitar Pure.jpeg"
+                        },
+                        {
+                            "id": 276,
+                            "nombre": "Maquina De Afeitar",
+                            "Marca": "Guillette",
+                            "Presentación": "2UND",
+                            "Precio": 4286,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Maquina Afeitar Gillette.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 31,
+                    "nombre": "Automedicacion",
+                    "marcas": [
+                        "Lacofa",
+                        "Malick",
+                        "Ancla",
+                        "Chispita",
+                        "Bayer"
+                    ],
+                    "productos": [
+                        {
+                            "id": 277,
+                            "nombre": "Aceite Camibar",
+                            "Marca": "Lacofa",
+                            "Presentación": "60ML",
+                            "Precio": 1635,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Aceite Camibar lACOFA.jpeg"
+                        },
+                        {
+                            "id": 278,
+                            "nombre": "Agua Florida",
+                            "Marca": "Malick",
+                            "Presentación": "120ML",
+                            "Precio": 682,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Agua Florida Malick.jpeg"
+                        },
+                        {
+                            "id": 279,
+                            "nombre": "Agua Oxigenada",
+                            "Marca": "Ancla",
+                            "Presentación": "60ML",
+                            "Precio": 742,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Agua Oxigenada Ancla.jpeg"
+                        },
+                        {
+                            "id": 280,
+                            "nombre": "Agua Oxigenada",
+                            "Marca": "Ancla",
+                            "Presentación": "120ML",
+                            "Precio": 902,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Agua Oxigenada.jpeg"
+                        },
+                        {
+                            "id": 281,
+                            "nombre": "Agua Oxigenada",
+                            "Marca": "Ancla",
+                            "Presentación": "Spray 10 VOL 120ML",
+                            "Precio": 1403,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Agua Oxigenada Ancla Spray.jpeg"
+                        },
+                        {
+                            "id": 282,
+                            "nombre": "Alcohól",
+                            "Marca": "Chispita",
+                            "Presentación": "250ML",
+                            "Precio": 841,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Alcohol Chispita.jpeg"
+                        },
+                        {
+                            "id": 283,
+                            "nombre": "Algodon",
+                            "Marca": "Malick",
+                            "Presentación": "10G",
+                            "Precio": 194,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Algodon Malick.jpeg"
+                        },
+                        {
+                            "id": 284,
+                            "nombre": "Algodon",
+                            "Marca": "Malick",
+                            "Presentación": "25G",
+                            "Precio": 387,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Malick 25g.jpeg"
+                        },
+                        {
+                            "id": 285,
+                            "nombre": "Alka-Seltzer Extreme Boost",
+                            "Marca": "Bayer",
+                            "Presentación": "10UND",
+                            "Precio": 2693,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Alka Seltzer Extreme.jpeg"
+                        },
+                        {
+                            "id": 286,
+                            "nombre": "Analgésico Dorival",
+                            "Marca": "Bayer",
+                            "Presentación": "12UND",
+                            "Precio": 4152,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Analgésico Dorival.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 32,
+                    "nombre": "Cuidado Bucal",
+                    "marcas": [
+                        "Soul Foods",
+                        "Colgate",
+                        "Oral-B"
+                    ],
+                    "productos": [
+                        {
+                            "id": 287,
+                            "nombre": "Cepillo De Dientes",
+                            "Marca": "Soul Foods",
+                            "Presentación": "1UND",
+                            "Precio": 4623,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cepillo De Dientes Soul Foods.jpeg"
+                        },
+                        {
+                            "id": 288,
+                            "nombre": "Cepillo Dental",
+                            "Marca": "Colgate",
+                            "Presentación": "1UND",
+                            "Precio": 4112,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cepillo Dental Extra Suave Colgate.jpeg"
+                        },
+                        {
+                            "id": 289,
+                            "nombre": "Cepillo Dental",
+                            "Marca": "Colgate",
+                            "Presentación": "2UND",
+                            "Precio": 1303,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cepillo Dental Colgate.jpeg"
+                        },
+                        {
+                            "id": 290,
+                            "nombre": "Cepillo Dental 0-2 Años",
+                            "Marca": "Colgate",
+                            "Presentación": "1UND",
+                            "Precio": 2433,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cepillo Dental Extra Suave Colgate Smiles.jpeg"
+                        },
+                        {
+                            "id": 291,
+                            "nombre": "Cepillo Dental 2-5 Años",
+                            "Marca": "Colgate",
+                            "Presentación": "1UND",
+                            "Precio": 2433,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cepillo Dental Colgate 360.jpeg"
+                        },
+                        {
+                            "id": 292,
+                            "nombre": "Cepillo Dental 6+",
+                            "Marca": "Colgate",
+                            "Presentación": "1UND",
+                            "Precio": 2433,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cepillo Dental Extra Suave Colgate Smiles 6.jpeg"
+                        },
+                        {
+                            "id": 293,
+                            "nombre": "Cepillo Dental",
+                            "Marca": "Oral-B",
+                            "Presentación": "3UND",
+                            "Precio": 4660,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cepillo Dental Extra Suave Oral-B.jpeg"
+                        },
+                        {
+                            "id": 294,
+                            "nombre": "Cepillo Dental",
+                            "Marca": "Oral-B",
+                            "Presentación": "1UND",
+                            "Precio": 1106,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Cepollo Dental Duro Oral-B Pro.jpeg"
+                        },
+                        {
+                            "id": 295,
+                            "nombre": "Crema Dental Doble Frescura",
+                            "Marca": "Colgate",
+                            "Presentación": "100ML",
+                            "Precio": 1847,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Crema Dental Colgate Doble Frescura.jpeg"
+                        },
+                        {
+                            "id": 296,
+                            "nombre": "Crema Dental Anticaries",
+                            "Marca": "Colgate",
+                            "Presentación": "1UND",
+                            "Precio": 867,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Crema Dental Colgate Maxima Proteccion.jpeg"
+                        }
+                    ]     
+                },
+                {
+                    "id": 33,
+                    "nombre": "Cuidado Femenino",
+                    "marcas": [
+                        "Saba",
+                        "Kotex"
+                    ],
+                    "productos": [
+                        {
+                            "id": 297,
+                            "nombre": "Protectores Diarios",
+                            "Marca": "Saba",
+                            "Presentación": "28UND",
+                            "Precio": 1359,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Saba diarios 28.jpeg"
+                        },
+                        {
+                            "id": 298,
+                            "nombre": "Proctectores Largo",
+                            "Marca": "Saba",
+                            "Presentación": "16UND",
+                            "Precio": 841,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Saba protectores 16.jpeg"
+                        },
+                        {
+                            "id": 299,
+                            "nombre": "Protector Lightdays",
+                            "Marca": "Kotex",
+                            "Presentación": "50UND",
+                            "Precio": 1971,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Protector Kotex Lightdays.jpeg"
+                        },
+                        {
+                            "id": 300,
+                            "nombre": "Protectores Diarios Largo",
+                            "Marca": "Saba",
+                            "Presentación": "28UND",
+                            "Precio": 1427,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Saba diarios largos 28.jpeg"
+                        },
+                        {
+                            "id": 301,
+                            "nombre": "Tampones Regular",
+                            "Marca": "Saba",
+                            "Presentación": "10UND",
+                            "Precio": 2576,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Tampones Femenino Saba.jpeg"
+                        },
+                        {
+                            "id": 302,
+                            "nombre": "Tampones Super",
+                            "Marca": "Saba",
+                            "Presentación": "10UND",
+                            "Precio": 3247,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Tampones Femenino Saba Super.jpeg"
+                        },
+                        {
+                            "id": 303,
+                            "nombre": "Tampones Sport",
+                            "Marca": "Kotex",
+                            "Presentación": "8UND",
+                            "Precio": 2067,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Tampones Femeninos Kotex.jpeg"
+                        },
+                        {
+                            "id": 304,
+                            "nombre": "Toalla Con Alas",
+                            "Marca": "Kotex",
+                            "Presentación": "10UND",
+                            "Precio": 850,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Toalla Kotex Esencial.jpeg"
+                        },
+                        {
+                            "id": 305,
+                            "nombre": "Toalla Regular",
+                            "Marca": "Saba",
+                            "Presentación": "14UND",
+                            "Precio": 2035,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Saba invisible 14.jpeg"
+                        },
+                        {
+                            "id": 306,
+                            "nombre": "Toalla Nocturna",
+                            "Marca": "Saba",
+                            "Presentación": "10UND",
+                            "Precio": 1954,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Toallas Femeninas Saba Nocturna.jpeg"
+                        }
+                    ]
+                },
+                {
+                    "id": 34,
+                    "nombre": "Jabones Corporales",
+                    "marcas": [
+                        "Lactovit",
+                        "Dove",
+                        "Protex"
+                    ],
+                    "productos": [
+                        {
+                            "id": 307,
+                            "nombre": "Gel De Ducha",
+                            "Marca": "Lactovit",
+                            "Presentación": "600ML",
+                            "Precio": 4399,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Lactovit gel ducha.jpeg"
+                        },
+
+                        {
+                            "id": 308,
+                            "nombre": "Jabon De tocador",
+                            "Marca": "Dove",
+                            "Presentación": "6UND 540G",
+                            "Precio": 4725,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Dove jabon tocador.jpeg"
+                        },
+                        {
+                            "id": 309,
+                            "nombre": "Jabon De Tocador",
+                            "Marca": "Dove",
+                            "Presentación": "90G",
+                            "Precio": 1129,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Dove jabon tocador 90.jpeg"
+                        },
+
+                        {
+                            "id": 310,
+                            "nombre": "Jabon De Tocador",
+                            "Marca": "Dove",
+                            "Presentación": "135G",
+                            "Precio": 1570,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Dove jabon tocador 90.jpeg"
+                        },
+                        {
+                            "id": 311,
+                            "nombre": "Jabon De Tocador",
+                            "Marca": "Protex",
+                            "Presentación": "3UND 330G",
+                            "Precio": 2148,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Jabon protex 3.jpeg"
+                        },
+                        {
+                            "id": 312,
+                            "nombre": "Jabon De Tocador",
+                            "Marca": "Protex",
+                            "Presentación": "110G",
+                            "Precio": 748,
+                            "Cantidad": 0,
+                            "Imagen": "/Categorias/Jabon protex 1.jpeg"
+                        }
+                    ]    
+                }
+            ]    
+        }
+    ]
+}    
+
+
+  
