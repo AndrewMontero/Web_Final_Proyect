@@ -1,33 +1,31 @@
 <?php
-require '../utils/database.php';
-require '../models/users.php';
+require_once "../utils/database.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST['nombre'];
-    $apellido = $_POST['apellido'];
-    $telefono = $_POST['telefono'];
-    $direccion = $_POST['direccion'];
-    $email = $_POST['email'];
-    $contraseña = $_POST['contraseña'];
+    $nombre = $mysqli->real_escape_string($_POST['nombre']);
+    $apellido = $mysqli->real_escape_string($_POST['apellido']);
+    $telefono = $mysqli->real_escape_string($_POST['telefono']);
+    $direccion = $mysqli->real_escape_string($_POST['direccion']);
+    $email = $mysqli->real_escape_string($_POST['email']);
+    $contraseña = password_hash($mysqli->real_escape_string($_POST['contraseña']), PASSWORD_BCRYPT); // Encriptar la contraseña
 
-    $conn = get_mysql_connection();
+    $sql = "INSERT INTO usuarios (nombre, apellido, telefono, direccion, email, contraseña) VALUES (?, ?, ?, ?, ?, ?)";
 
-    $user_data = [
-        'nombre' => $nombre,
-        'apellido' => $apellido,
-        'telefono' => $telefono,
-        'direccion' => $direccion,
-        'email' => $email,
-        'contraseña' => $contraseña
-    ];
+    if ($stmt = $mysqli->prepare($sql)) {
+        $stmt->bind_param("ssisss", $nombre, $apellido, $telefono, $direccion, $email, $contraseña);
 
-    $new_user_id = insert($conn, $user_data);
-    if (is_int($new_user_id)) {
-            echo "<script>alert('Usuario registrado exitosamente! ID: $new_user_id');</script>";
+        if ($stmt->execute()) {
+            // Registro exitoso, redirigir a la página de login
+            header("Location: ../pages/login.php");
+            exit();
         } else {
-            echo "<script>alert('Error al registrar el usuario.');</script>";
-    }
+            echo "Error al registrar: " . $stmt->error;
+        }
 
-    $conn->close();
+        $stmt->close();
+    } else {
+        echo "Error en la preparación de la consulta: " . $mysqli->error;
+    }
 }
-?>
+
+$mysqli->close();

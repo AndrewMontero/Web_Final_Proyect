@@ -46,7 +46,7 @@ require '../shared/header.php';
                         </form>
                     </div>
                     <div class="card-footer text-center">
-                        <a href="login.html">¿Ya tienes una cuenta? Inicia sesión aquí</a>
+                        <a href="login.php">¿Ya tienes una cuenta? Inicia sesión aquí</a>
                     </div>
                 </div>
             </div>

@@ -11,22 +11,21 @@ require '../shared/header.php';
                         <h4>Login</h4>
                     </div>
                     <div class="card-body">
-                        <form>
+                        <!-- El formulario debe enviar los datos a user.php para el procesamiento del login -->
+                        <form action="dashboard.php" method="POST">
                             <div class="form-group">
                                 <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Ingrese su email"
-                                    required>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email" required>
                             </div>
                             <div class="form-group">
                                 <label for="contraseña">Contraseña</label>
-                                <input type="password" class="form-control" id="contraseña"
-                                    placeholder="Ingrese su contraseña" required>
+                                <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña" required>
                             </div>
                             <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
                         </form>
                     </div>
                     <div class="card-footer text-center">
-                        <a href="registro.php">¿No tienes una cuenta? Regístrate aquí</a>
+                        <a href="register.php">¿No tienes una cuenta? Regístrate aquí</a>
                     </div>
                 </div>
             </div>
