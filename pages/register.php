@@ -26,6 +26,7 @@ require '../shared/header.php';
                                 <label for="telefono">Teléfono</label>
                                 <input type="tel" class="form-control" id="telefono" name="telefono"
                                     placeholder="Ingrese su teléfono" required>
+
                             </div>
                             <div class="form-group">
                                 <label for="direccion">Dirección</label>

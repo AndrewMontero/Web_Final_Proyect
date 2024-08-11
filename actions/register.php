@@ -1,4 +1,6 @@
 <?php
+session_start(); // Iniciar la sesión
+
 require_once "../utils/database.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -16,6 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             // Registro exitoso, redirigir a la página de login
+            $_SESSION['message'] = 'Registro exitoso. Por favor, inicie sesión.';
             header("Location: ../pages/login.php");
             exit();
         } else {

@@ -11,8 +11,7 @@ require '../shared/header.php';
                         <h4>Login</h4>
                     </div>
                     <div class="card-body">
-                        <!-- El formulario debe enviar los datos a user.php para el procesamiento del login -->
-                        <form action="dashboard.php" method="POST">
+                        <form action="/models/users.php" method="POST"> 
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email" required>

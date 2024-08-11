@@ -4,98 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página</title>
+    <title>Mi Tienda Virtual</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
+    <link rel="stylesheet" href="/styles/dashboard.css">
 
-        .sidebar {
-            background-color: #fff;
-            padding: 20px;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            overflow-y: auto;
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-            margin-top: 100px;
-            width: 250px;
-        }
-
-        .content {
-            padding: 20px;
-            margin-left: 270px;
-            margin-top: 90px;
-        }
-
-        .product {
-            background-color: #e9ecef;
-            padding: 20px;
-            margin-bottom: 20px;
-            height: 250px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .header {
-            height: 105px;
-            z-index: 1000;
-        }
-        
-        .card {
-            height: 100%;
-        }
-
-        .card-img-top {
-            max-height: 150px;
-            width: auto;
-            margin: 0 auto;
-        }
-
-        .input-group {
-            max-width: 100px;
-        }
-
-        .input-group input {
-            text-align: center;
-        }
-
-        .add-to-cart {
-            margin-left: 5px;
-            width: 120px;
-        }
-
-        .logo img {
-            max-height: 90px;
-            width: auto;
-            margin-top: 1px;
-        }
-
-        .header-buttons {
-            margin-top: -10px;
-        }
-
-        .price-range {
-            margin: 20px 0;
-        }
-
-        .noUi-horizontal {
-            height: 10px;
-        }
-
-        .noUi-horizontal .noUi-handle {
-            border-radius: 50%;
-        }
-
-        .noUi-connect {
-            background: #007bff;
-        }
-    </style>
 </head>
 
 <body>
@@ -108,14 +21,24 @@
                 </div>
             </div>
             <div class="col-3 d-flex justify-content-end align-items-center py-3 header-buttons">
-                <div class="row w-100">
-                    <div class="col-6 d-flex justify-content-end">
-                        <a href="perfil.php" class="btn btn-primary w-100">MiI Cuenta</a>
-                    </div>
-                    <div class="col-6 d-flex justify-content-end">
-                        <button class="btn btn-primary w-100">Carrito</button>
+                <div class="usuarioCarrito">
+                    <div class="row w-100">
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <a href="perfil.php" class="d-flex align-items-center">
+                                <img src="../img/usuario.png" alt="Usuario" class="icono-usuario">
+                                <span class="texto-usuario ml-2">Mi cuenta</span>
+                            </a>
+                        </div>
+                        <div class="col-6 d-flex justify-content-end align-items-center">
+                            <a href="carrito.php" class="d-flex align-items-center">
+                                <img src="../img/carrito.jpg" alt="Carrito" class="icono-carrito">
+                                <span class="texto-carrito ml-2">Mi carrito</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
         <div class="row">
@@ -152,167 +75,12 @@
             </div>
         </div>
     </div>
-
+    <script src="../js/dashboard.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const priceRange = document.getElementById('price-range');
-            const priceValue = document.getElementById('price-value');
-            const filterPriceButton = document.getElementById('filterPriceButton');
-            const searchButton = document.getElementById('searchButton');
-            const searchInput = document.getElementById('search');
-            const categoriaSelect = document.getElementById('category');
-            const subcategoriaSelect = document.getElementById('subcategory');
-
-            noUiSlider.create(priceRange, {
-                start: [5000, 74000], // Valores iniciales en colones
-                connect: true,
-                range: {
-                    'min': 0,
-                    'max': 100000 // Rango máximo en colones
-                },
-                tooltips: [true, true],
-                format: {
-                    to: value => `₡${parseInt(value)}`, // Símbolo de colón
-                    from: value => Number(value.replace('₡', ''))
-                }
-            });
-
-            priceRange.noUiSlider.on('update', (values, handle) => {
-                priceValue.innerHTML = `Precio: ${values[0]} - ${values[1]}`;
-            });
-
-            fetch('../json/productos.json')
-                .then(response => response.json())
-                .then(data => {
-                    const productosContainer = document.getElementById('productos');
-
-                    data.categorias.forEach(categoria => {
-                        const categoriaOption = document.createElement('option');
-                        categoriaOption.value = categoria.nombre;
-                        categoriaOption.textContent = categoria.nombre;
-                        categoriaSelect.appendChild(categoriaOption);
-                    });
-
-                    categoriaSelect.addEventListener('change', () => {
-                        const categoriaSeleccionada = categoriaSelect.value;
-                        subcategoriaSelect.innerHTML = '<option value="">Todas</option>';
-
-                        if (categoriaSeleccionada) {
-                            const categoria = data.categorias.find(cat => cat.nombre === categoriaSeleccionada);
-                            if (categoria) {
-                                categoria.subcategorias.forEach(subcategoria => {
-                                    const subcategoriaOption = document.createElement('option');
-                                    subcategoriaOption.value = subcategoria.nombre;
-                                    subcategoriaOption.textContent = subcategoria.nombre;
-                                    subcategoriaSelect.appendChild(subcategoriaOption);
-                                });
-                            }
-                        }
-
-                        filtrarProductos();
-                    });
-
-                    subcategoriaSelect.addEventListener('change', () => {
-                        filtrarProductos();
-                    });
-
-                    filterPriceButton.addEventListener('click', () => {
-                        filtrarProductos();
-                    });
-
-                    searchButton.addEventListener('click', () => {
-                        filtrarProductos(true); // Pasamos true para indicar que es una búsqueda por palabra clave
-                        searchInput.value = ''; // Limpiar el campo de búsqueda
-                        categoriaSelect.value = ''; // Restablecer el combobox de categoría
-                        subcategoriaSelect.value = ''; // Restablecer el combobox de subcategoría
-                    });
-
-                    function filtrarProductos(esBusquedaPorPalabraClave = false) {
-                        const categoriaSeleccionada = categoriaSelect.value;
-                        const subcategoriaSeleccionada = subcategoriaSelect.value;
-                        const searchKeyword = searchInput.value.toLowerCase();
-                        const [precioMin, precioMax] = priceRange.noUiSlider.get().map(value => Number(value.replace('₡', '')));
-
-                        const productosFiltrados = data.categorias
-                            .flatMap(categoria => {
-                                return categoria.subcategorias.flatMap(subcategoria => {
-                                    return subcategoria.productos.map(producto => ({
-                                        ...producto,
-                                        categoria: categoria.nombre,
-                                        subcategoria: subcategoria.nombre
-                                    }));
-                                });
-                            })
-                            .filter(producto => {
-                                const categoriaValida = !categoriaSeleccionada || producto.categoria === categoriaSeleccionada;
-                                const subcategoriaValida = !subcategoriaSeleccionada || producto.subcategoria === subcategoriaSeleccionada;
-                                const precioValido = producto.Precio >= precioMin && producto.Precio <= precioMax;
-                                const keywordValido = !searchKeyword || producto.nombre.toLowerCase().includes(searchKeyword) ||
-                                    producto.Marca.toLowerCase().includes(searchKeyword) ||
-                                    producto.subcategoria.toLowerCase().includes(searchKeyword);
-
-                                // Si es una búsqueda por palabra clave, solo consideramos keywordValido
-                                if (esBusquedaPorPalabraClave) {
-                                    return keywordValido;
-                                } else {
-                                    return categoriaValida && subcategoriaValida && precioValido;
-                                }
-                            });
-
-                        mostrarProductos(productosFiltrados);
-                    }
-
-                    function mostrarProductos(productos) {
-                        productosContainer.innerHTML = '';
-                        productos.forEach(producto => {
-                            const productoDiv = document.createElement('div');
-                            productoDiv.classList.add('col-md-4', 'mb-3');
-                            productoDiv.innerHTML = `
-                            <div class="card">
-                                <img src="${producto.Imagen}" class="card-img-top" alt="${producto.nombre}">
-                                <div class="card-body">
-                                    <h5 class="card-title">${producto.nombre}</h5>
-                                    <p class="card-text">Marca: ${producto.Marca}</p>
-                                    <p class="card-text">Presentación: ${producto.Presentación}</p>
-                                    <p class="card-text">Precio: ₡${producto.Precio}</p> <!-- Cambiado a colones -->
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="input-group input-group-sm">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="decreaseQuantity(this)">-</button>
-                                            </div>
-                                            <input type="number" class="form-control" value="1" min="1" max="10">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="increaseQuantity(this)">+</button>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-primary btn-sm add-to-cart">Añadir</button>
-                                    </div>
-                                </div>
-                            </div>`;
-                            productosContainer.appendChild(productoDiv);
-                        });
-                    }
-
-                    function decreaseQuantity(button) {
-                        const input = button.parentElement.nextElementSibling;
-                        if (input.value > 1) {
-                            input.value--;
-                        }
-                    }
-
-                    function increaseQuantity(button) {
-                        const input = button.parentElement.previousElementSibling;
-                        input.value++;
-                    }
-
-                    filtrarProductos();
-                });
-        });
-    </script>
+    
 </body>
 
 </html>

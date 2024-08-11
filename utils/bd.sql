@@ -3,12 +3,23 @@ CREATE DATABASE IF NOT EXISTS tienda;
 USE tienda;
 
 CREATE TABLE IF NOT EXISTS usuarios (
-    id INT(50) NOT NULL AUTO_INCREMENT,
+    id INT(11) NOT NULL AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
     apellido VARCHAR(50) NOT NULL,
-    telefono INT(50) NOT NULL,
-    direccion VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    contraseña VARCHAR(50) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    direccion VARCHAR(100) NOT NULL,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    contraseña VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
-) 
+);
+
+CREATE TABLE IF NOT EXISTS compras (
+   id INT(11) NOT NULL AUTO_INCREMENT,
+    user_id INT(11) NOT NULL,
+    nombre VARCHAR(100) NOT NULL,
+    marca VARCHAR(50) NOT NULL,
+    presentacion VARCHAR(100) NOT NULL,
+    precio DECIMAL(10, 2) NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (user_id) REFERENCES usuarios(id) ON DELETE CASCADE
+);

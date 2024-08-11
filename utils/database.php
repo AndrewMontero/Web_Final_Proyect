@@ -1,4 +1,3 @@
-
 <?php
 $mysqli = new mysqli("localhost", "root", "", "tienda");
 if (mysqli_connect_errno()) {
