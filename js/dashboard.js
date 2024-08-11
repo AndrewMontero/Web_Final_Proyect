@@ -113,55 +113,104 @@ document.addEventListener('DOMContentLoaded', () => {
                 productos.forEach(producto => {
                     const productoDiv = document.createElement('div');
                     productoDiv.classList.add('col-md-4', 'mb-3');
+                    
                     productoDiv.innerHTML = `
-                            <div class="card">
-                                <img src="${producto.Imagen}" class="card-img-top" alt="${producto.nombre}">
-                                <div class="card-body">
-                                    <h5 class="card-title">${producto.nombre}</h5>
-                                    <p class="card-text">Marca: ${producto.Marca}</p>
-                                    <p class="card-text">Presentación: ${producto.Presentación}</p>
-                                    <p class="card-text">Precio: ₡${producto.Precio}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="input-group input-group-sm">
-                                            <div class="input-group-prepend">
-                                                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="decreaseQuantity(this)">-</button>
-                                            </div>
-                                            <input type="number" class="form-control" value="1" min="1" max="10">
-                                            <div class="input-group-append">
-                                                <button class="btn btn-outline-secondary btn-sm" type="button" onclick="increaseQuantity(this)">+</button>
-                                            </div>
+                        <div class="card">
+                            <img src="${producto.Imagen}" class="card-img-top" alt="${producto.nombre}">
+                            <div class="card-body">
+                                <h5 class="card-title">${producto.nombre}</h5>
+                                <p class="card-text">Marca: ${producto.Marca}</p>
+                                <p class="card-text">Presentación: ${producto.Presentación}</p>
+                                <p class="card-text">Precio: ₡${producto.Precio}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="input-group input-group-sm">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-secondary btn-sm decrease-btn" type="button">-</button>
                                         </div>
-                                        <button class="btn btn-primary btn-sm add-to-cart">Añadir</button>
+                                        <input type="number" class="form-control quantity-input" value="1" min="1" max="10">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary btn-sm increase-btn" type="button">+</button>
+                                        </div>
                                     </div>
+                                    <button class="btn btn-primary btn-sm add-to-cart">Añadir</button>
                                 </div>
-                            </div>`;
+                            </div>
+                        </div>`;
+                    
                     productosContainer.appendChild(productoDiv);
+            
+                    // Añadir eventos a los botones de aumentar y disminuir
+                    const decreaseBtn = productoDiv.querySelector('.decrease-btn');
+                    const increaseBtn = productoDiv.querySelector('.increase-btn');
+                    const quantityInput = productoDiv.querySelector('.quantity-input');
+            
+                    decreaseBtn.addEventListener('click', () => {
+                        if (quantityInput.value > 1) {
+                            quantityInput.value--;
+                        }
+                    });
+            
+                    increaseBtn.addEventListener('click', () => {
+                        quantityInput.value++;
+                    });
 
                     // Añadir evento de clic para el botón "Añadir"
                     productoDiv.querySelector('.add-to-cart').addEventListener('click', () => {
                         const cantidad = productoDiv.querySelector('input[type="number"]').value;
-                        const productoCarrito = {
-                            ...producto,
-                            cantidad: parseInt(cantidad) // Guardar la cantidad seleccionada
-                        };
-                        carrito.push(productoCarrito);
-                        console.log('Producto añadido al carrito:', productoCarrito);
+                        const productoExistente = carrito.find(item => item.id === producto.id);
+
+                        if (productoExistente) {
+                            // Si el producto ya existe en el carrito, simplemente aumenta la cantidad
+                            productoExistente.cantidad += parseInt(cantidad);
+                        } else {
+                            // Si el producto no existe en el carrito, lo añade como nuevo
+                            const productoCarrito = {
+                                ...producto,
+                                cantidad: parseInt(cantidad) // Guardar la cantidad seleccionada
+                            };
+
+                            carrito.push(productoCarrito);
+                            
+                        }
+                        
                         console.log('Carrito actual:', carrito);
+                        console.log('Producto añadido al carrito:', producto);
                     });
                 });
             }
 
             function decreaseQuantity(button) {
-                const input = button.parentElement.nextElementSibling;
+                const input = button.parentElement.parentElement.querySelector('input[type="number"]');
                 if (input.value > 1) {
                     input.value--;
                 }
             }
-
+            
             function increaseQuantity(button) {
-                const input = button.parentElement.previousElementSibling;
+                const input = button.parentElement.parentElement.querySelector('input[type="number"]');
                 input.value++;
             }
+
+            function guardarCarrito() {
+
+                fetch('/actions/carrito.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(carrito)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log('Respuesta del servidor:', data);
+                    })
+                    .catch(error => {
+                        console.error('Error al enviar el carrito:', error);
+                    });
+            }
+
+            // Añadir un botón para guardar el carrito y llamar a la función
+            document.getElementById('guardarCarritoButton').addEventListener('click', guardarCarrito);
 
             filtrarProductos();
         });

@@ -1,17 +1,7 @@
 <?php
 
 require '../shared/header.php';
-
-// Iniciar la sesión
-session_start();
-
-// Verificar si el array 'carrito' existe en la sesión
-if (isset($_SESSION['carrito'])) {
-    $carrito = $_SESSION['carrito'];
-} else {
-    $carrito = [];
-}
-
+require '../actions/viewCarrito.php';
 ?>
 
 <!DOCTYPE html>
@@ -35,22 +25,25 @@ if (isset($_SESSION['carrito'])) {
                     <th>Presentación</th>
                     <th>Cantidad</th>
                     <th>Precio</th>
+                    <th>Imagen</th>
                 </tr>
             </thead>
             <tbody>
-                <?php if (count($carrito) > 0): ?>
-                    <?php foreach ($carrito as $producto): ?>
+                <?php if (!empty($productos)): ?>
+                    <?php foreach ($productos as $item): ?>
                         <tr>
-                            <td><?php echo htmlspecialchars($producto['nombre']); ?></td>
-                            <td><?php echo htmlspecialchars($producto['Marca']); ?></td>
-                            <td><?php echo htmlspecialchars($producto['Presentación']); ?></td>
-                            <td><?php echo htmlspecialchars($producto['cantidad']); ?></td>
-                            <td>₡<?php echo number_format($producto['Precio'], 2); ?></td>
+                            <td><?php echo htmlspecialchars($item['nombre']); ?></td>
+                            <td><?php echo htmlspecialchars($item['marca']); ?></td>
+                            <td><?php echo htmlspecialchars($item['presentacion']); ?></td>
+                            <td><?php echo htmlspecialchars($item['cantidad']); ?></td>
+                            <td><?php echo htmlspecialchars($item['precio']); ?></td>
+                            <td><img src="<?php echo htmlspecialchars($item['imagen']); ?>" alt="Imagen del producto"
+                                    style="width: 100px; height: auto;"></td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="5" class="text-center">No hay productos en el carrito.</td>
+                        <td colspan="6" class="text-center">No hay productos en el carrito.</td>
                     </tr>
                 <?php endif; ?>
             </tbody>

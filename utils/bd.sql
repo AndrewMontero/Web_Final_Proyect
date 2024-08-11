@@ -23,3 +23,9 @@ CREATE TABLE IF NOT EXISTS compras (
     PRIMARY KEY (id),
     FOREIGN KEY (user_id) REFERENCES usuarios(id) ON DELETE CASCADE
 );
+
+ALTER TABLE compras
+ADD COLUMN imagen VARCHAR(255) AFTER precio;
+
+ALTER TABLE compras
+ADD COLUMN cantidad VARCHAR(255) AFTER presentacion;

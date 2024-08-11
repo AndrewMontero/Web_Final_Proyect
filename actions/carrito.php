@@ -1,22 +1,36 @@
 <?php
 session_start();
-require '../utils/database.php'; // Incluye el archivo con la configuración de conexión a la base de datos
+require_once "../utils/database.php";
+
+// Lee el cuerpo de la solicitud
+$carrito = json_decode(file_get_contents('php://input'), true);
 
 if (!isset($_SESSION['user_id'])) {
-    echo 'Error: No estás logueado';
-    exit();
+    echo json_encode(['error' => 'No estás autenticado.']);
+    exit;
 }
 
 $user_id = $_SESSION['user_id'];
 
-try {
-    $pdo = new PDO('mysql:host=localhost;dbname=tu_base_de_datos', 'usuario', 'contraseña');
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+foreach ($carrito as $item) {
+    
+    $name = $mysqli->real_escape_string($item['nombre']);
+    $brand = $mysqli->real_escape_string($item['Marca']);
+    $presentation = $mysqli->real_escape_string($item['Presentación']); 
+    $price = $item['Precio'];
+    $quantity = $item['cantidad'];
+    $image = $mysqli->real_escape_string($item['Imagen']); 
 
-    // Obtener los productos en el carrito
-    $stmt = $pdo->prepare('SELECT * FROM compras WHERE user_id = :user_id');
-    $stmt->execute(['user_id' => $user_id]);
-    $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
-} catch (PDOException $e) {
-    echo 'Error: ' . $e->getMessage();
+    $query = "INSERT INTO compras (user_id, nombre, marca, presentacion, cantidad, precio, imagen) VALUES (?, ?, ?, ?, ?, ?, ?)";
+    $stmt = $mysqli->prepare($query);
+    
+    $stmt->bind_param('issssds', $user_id, $name, $brand, $presentation, $quantity, $price, $image);
+
+    if (!$stmt->execute()) {
+        echo json_encode(['error' => $stmt->error]);
+        exit;
+    }
 }
+
+echo json_encode(['success' => 'Carrito guardado con éxito.']);
+?>

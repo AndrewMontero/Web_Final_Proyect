@@ -1,0 +1,13 @@
+Procesando item: Array
+(
+    [id] => 2
+    [nombre] => Aceite De Soya
+    [Marca] => Capullo
+    [Presentación] => Botella 3L
+    [Precio] => 6466
+    [Cantidad] => 0
+    [Imagen] => /Categorias/Capullo.png
+    [categoria] => Abarrotes
+    [subcategoria] => Aceites
+    [cantidad] => 1
+)

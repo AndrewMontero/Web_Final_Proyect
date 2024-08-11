@@ -30,15 +30,13 @@
                             </a>
                         </div>
                         <div class="col-6 d-flex justify-content-end align-items-center">
-                            <a href="carrito.php" class="d-flex align-items-center">
+                            <a id="guardarCarritoButton" href="carrito.php" class="d-flex align-items-center">
                                 <img src="../img/carrito.jpg" alt="Carrito" class="icono-carrito">
                                 <span class="texto-carrito ml-2">Mi carrito</span>
                             </a>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
         <div class="row">
@@ -80,7 +78,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.min.js"></script>
-    
+
 </body>
 
 </html>
