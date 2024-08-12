@@ -1,7 +1,7 @@
 <?php
 
-require '../shared/header.php';
 require '../actions/viewCarrito.php';
+require '../actions/deleteProducto.php';
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +26,7 @@ require '../actions/viewCarrito.php';
                     <th>Cantidad</th>
                     <th>Precio</th>
                     <th>Imagen</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,11 +40,18 @@ require '../actions/viewCarrito.php';
                             <td><?php echo htmlspecialchars($item['precio']); ?></td>
                             <td><img src="<?php echo htmlspecialchars($item['imagen']); ?>" alt="Imagen del producto"
                                     style="width: 100px; height: auto;"></td>
+                            <td>
+                                <form action="../actions/deleteProducto.php" method="post">
+                                    <input type="hidden" name="producto_id"
+                                        value="<?php echo htmlspecialchars($item['id']); ?>">
+                                    <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                </form>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="6" class="text-center">No hay productos en el carrito.</td>
+                        <td colspan="7" class="text-center">No hay productos en el carrito.</td>
                     </tr>
                 <?php endif; ?>
             </tbody>
