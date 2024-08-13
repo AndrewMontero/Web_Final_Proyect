@@ -6,7 +6,6 @@ require '../actions/deleteProducto.php';
 $totalGeneral = 0;
 if (!empty($productos)) {
     foreach ($productos as $item) {
-        // Asegúrate de que la cantidad se trate como número
         $cantidad = floatval($item['cantidad']);
         $totalGeneral += $cantidad * floatval($item['precio']);
     }
@@ -61,7 +60,7 @@ if (!empty($productos)) {
                                 <td>
                                     <?php
                                     $total = floatval($item['cantidad']) * floatval($item['precio']);
-                                    echo number_format($total, 2); // Formatea el total con dos decimales
+                                    echo number_format($total, 2);
                                     ?>
                                 </td>
                                 <td>
@@ -85,7 +84,8 @@ if (!empty($productos)) {
             <div class="d-flex justify-content-between align-items-center mt-4">
                 <button type="submit" class="btn btn-warning">Actualizar Cantidades</button>
                 <h4>Total General: <?php echo number_format($totalGeneral, 2); ?></h4>
-                <a href="finalizarCompra.php" class="btn btn-success">Finalizar Compra</a>
+                <!-- Botón para abrir el modal de finalizar compra -->
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#finalizarCompraModal">Finalizar Compra</button>
             </div>
         </form>
 
@@ -93,6 +93,50 @@ if (!empty($productos)) {
             <a href="dashboard.php" class="btn btn-primary">Seguir Comprando</a>
         </div>
     </div>
+
+    <!-- Modal para finalizar compra -->
+    <div class="modal fade" id="finalizarCompraModal" tabindex="-1" role="dialog" aria-labelledby="finalizarCompraModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="finalizarCompraModalLabel">Finalizar Compra</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="../actions/procesarPago.php" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="nombreTarjeta">Nombre en la Tarjeta</label>
+                            <input type="text" class="form-control" id="nombreTarjeta" name="nombreTarjeta" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="numeroTarjeta">Número de Tarjeta</label>
+                            <input type="text" class="form-control" id="numeroTarjeta" name="numeroTarjeta" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fechaVencimiento">Fecha de Vencimiento</label>
+                            <input type="text" class="form-control" id="fechaVencimiento" name="fechaVencimiento" placeholder="MM/AA" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="codigoCVV">Código CVV</label>
+                            <input type="text" class="form-control" id="codigoCVV" name="codigoCVV" required>
+                        </div>
+                        <input type="hidden" name="total" value="<?php echo $totalGeneral; ?>">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Pagar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

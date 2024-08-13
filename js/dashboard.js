@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             <button class="btn btn-outline-secondary btn-sm increase-btn" type="button">+</button>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary btn-sm add-to-cart">Añadir</button>
+                                    <button class="btn btn-primary btn-sm add-to-cart" data-producto-id="${producto.id}">Añadir</button>
                                 </div>
                             </div>
                         </div>`;
@@ -165,26 +165,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     // Añadir evento de clic para el botón "Añadir"
                     productoDiv.querySelector('.add-to-cart').addEventListener('click', () => {
-                        const cantidad = productoDiv.querySelector('input[type="number"]').value;
-                        const productoExistente = carrito.find(item => item.id === producto.id);
-
-                        if (productoExistente) {
-                            // Si el producto ya existe en el carrito, incrementar la cantidad
-                            productoExistente.cantidad += parseInt(cantidad);
-                        } else {
-                            // Si el producto no existe, añadirlo al carrito
-                            const productoCarrito = {
-                                ...producto,
-                                cantidad: parseInt(cantidad) // Guardar la cantidad seleccionada
-                            };
-
-                            carrito.push(productoCarrito);
-                        }
-
-                        console.log('Carrito actual:', carrito);
-                        console.log('Producto añadido al carrito:', producto);
+                        const cantidad = parseInt(quantityInput.value);
+                        addToCart(producto.id, cantidad);
                     });
                 });
+            }
+
+            // Función para añadir productos al carrito
+            function addToCart(productoId, cantidad) {
+                let productoExistente = carrito.find(item => item.id === productoId);
+
+                if (productoExistente) {
+                    // Si el producto ya está en el carrito, solo incrementa la cantidad
+                    productoExistente.cantidad += cantidad;
+                } else {
+                    // Si no está en el carrito, lo agrega con la cantidad seleccionada
+                    const producto = data.categorias
+                        .flatMap(categoria => categoria.subcategorias)
+                        .flatMap(subcategoria => subcategoria.productos)
+                        .find(producto => producto.id === productoId);
+
+                    carrito.push({ ...producto, cantidad });
+                }
+
+                // Actualiza el carrito (esto sería una función para renderizar el carrito)
+                actualizarCarrito();
+            }
+
+            // Función que simula la actualización del carrito en el frontend
+            function actualizarCarrito() {
+                // Aquí podrías actualizar el DOM para mostrar los productos en el carrito
+                console.log('Carrito actual:', carrito);
             }
 
             // Función para guardar el carrito en el servidor
