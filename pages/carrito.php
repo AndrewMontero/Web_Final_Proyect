@@ -1,5 +1,4 @@
 <?php
-
 require '../actions/viewCarrito.php';
 require '../actions/deleteProducto.php';
 
@@ -7,10 +6,11 @@ require '../actions/deleteProducto.php';
 $totalGeneral = 0;
 if (!empty($productos)) {
     foreach ($productos as $item) {
-        $totalGeneral += $item['cantidad'] * $item['precio'];
+        // Asegúrate de que la cantidad se trate como número
+        $cantidad = floatval($item['cantidad']);
+        $totalGeneral += $cantidad * floatval($item['precio']);
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -26,60 +26,68 @@ if (!empty($productos)) {
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-4">Carrito de Compras</h1>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Marca</th>
-                    <th>Presentación</th>
-                    <th>Cantidad</th>
-                    <th>Precio</th>
-                    <th>Imagen</th>
-                    <th>Total</th> <!-- Nueva columna -->
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php if (!empty($productos)): ?>
-                    <?php foreach ($productos as $item): ?>
-                        <tr>
-                            <td><?php echo htmlspecialchars($item['nombre']); ?></td>
-                            <td><?php echo htmlspecialchars($item['marca']); ?></td>
-                            <td><?php echo htmlspecialchars($item['presentacion']); ?></td>
-                            <td><?php echo htmlspecialchars($item['cantidad']); ?></td>
-                            <td><?php echo htmlspecialchars($item['precio']); ?></td>
-                            <td><img src="<?php echo htmlspecialchars($item['imagen']); ?>" alt="Imagen del producto"
-                                    style="width: 100px; height: auto;"></td>
-                            <td>
-                                <?php
-                                $total = htmlspecialchars($item['cantidad']) * htmlspecialchars($item['precio']);
-                                echo number_format($total, 2); // Formatea el total con dos decimales
-                                ?>
-                            </td> <!-- Nueva columna -->
-                            <td>
-                                <form action="../actions/deleteProducto.php" method="post">
-                                    <input type="hidden" name="producto_id"
-                                        value="<?php echo htmlspecialchars($item['id']); ?>">
-                                    <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
-                                </form>
-                            </td>
-                        </tr>
-                    <?php endforeach; ?>
-                <?php else: ?>
+        <form action="../actions/editProducto.php" method="post">
+            <table class="table table-bordered">
+                <thead>
                     <tr>
-                        <td colspan="8" class="text-center">No hay productos en el carrito.</td>
-                        <!-- Actualiza el colspan -->
+                        <th>Nombre</th>
+                        <th>Marca</th>
+                        <th>Presentación</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Imagen</th>
+                        <th>Total</th>
+                        <th>Acciones</th>
                     </tr>
-                <?php endif; ?>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <?php if (!empty($productos)): ?>
+                        <?php foreach ($productos as $item): ?>
+                            <tr>
+                                <td><?php echo htmlspecialchars($item['nombre']); ?></td>
+                                <td><?php echo htmlspecialchars($item['marca']); ?></td>
+                                <td><?php echo htmlspecialchars($item['presentacion']); ?></td>
+                                <td>
+                                    <input type="hidden" name="productos[<?php echo htmlspecialchars($item['id']); ?>][id]"
+                                        value="<?php echo htmlspecialchars($item['id']); ?>">
+                                    <input type="number"
+                                        name="productos[<?php echo htmlspecialchars($item['id']); ?>][cantidad]"
+                                        value="<?php echo htmlspecialchars($item['cantidad']); ?>" min="1" class="form-control"
+                                        style="width: 100px;">
+                                </td>
+                                <td><?php echo htmlspecialchars($item['precio']); ?></td>
+                                <td><img src="<?php echo htmlspecialchars($item['imagen']); ?>" alt="Imagen del producto"
+                                        style="width: 100px; height: auto;"></td>
+                                <td>
+                                    <?php
+                                    $total = floatval($item['cantidad']) * floatval($item['precio']);
+                                    echo number_format($total, 2); // Formatea el total con dos decimales
+                                    ?>
+                                </td>
+                                <td>
+                                    <form action="../actions/deleteProducto.php" method="post" class="d-inline">
+                                        <input type="hidden" name="producto_id"
+                                            value="<?php echo htmlspecialchars($item['id']); ?>">
+                                        <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <tr>
+                            <td colspan="8" class="text-center">No hay productos en el carrito.</td>
+                        </tr>
+                    <?php endif; ?>
+                </tbody>
+            </table>
 
-        <!-- Total general y botón de finalizar compra -->
-        <div class="d-flex justify-content-between align-items-center mt-4">
-            <h4>Total General: <?php echo number_format($totalGeneral, 2); ?></h4>
-            <a href="finalizarCompra.php" class="btn btn-success">Finalizar Compra</a>
-            <!-- Botón de finalizar compra -->
-        </div>
+            <!-- Botón para actualizar todas las cantidades -->
+            <div class="d-flex justify-content-between align-items-center mt-4">
+                <button type="submit" class="btn btn-warning">Actualizar Cantidades</button>
+                <h4>Total General: <?php echo number_format($totalGeneral, 2); ?></h4>
+                <a href="finalizarCompra.php" class="btn btn-success">Finalizar Compra</a>
+            </div>
+        </form>
 
         <div class="text-center mt-4">
             <a href="dashboard.php" class="btn btn-primary">Seguir Comprando</a>
