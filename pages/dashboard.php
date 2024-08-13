@@ -14,7 +14,12 @@
 <body>
     <div class="container-fluid">
         <div class="row fixed-top header bg-white">
-            <div class="col-3"></div>
+            <div class="col-3 d-flex justify-content-start align-items-center py-3">
+                <a href="login.php" class="d-flex align-items-center">
+                    <img src="../img/salir.png" alt="Salir" class="icono-salir">
+                    <span class="texto-salir ml-2">Salir</span>
+                </a>
+            </div>
             <div class="col-6 text-center py-3">
                 <div class="logo">
                     <img src="/img/logo.jpg" alt="Logo">
@@ -39,6 +44,7 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-3 sidebar">
                 <h5>Filtro</h5>
