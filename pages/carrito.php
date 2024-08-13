@@ -2,6 +2,15 @@
 
 require '../actions/viewCarrito.php';
 require '../actions/deleteProducto.php';
+
+// Calcular el total general
+$totalGeneral = 0;
+if (!empty($productos)) {
+    foreach ($productos as $item) {
+        $totalGeneral += $item['cantidad'] * $item['precio'];
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +35,7 @@ require '../actions/deleteProducto.php';
                     <th>Cantidad</th>
                     <th>Precio</th>
                     <th>Imagen</th>
+                    <th>Total</th> <!-- Nueva columna -->
                     <th>Acciones</th>
                 </tr>
             </thead>
@@ -41,6 +51,12 @@ require '../actions/deleteProducto.php';
                             <td><img src="<?php echo htmlspecialchars($item['imagen']); ?>" alt="Imagen del producto"
                                     style="width: 100px; height: auto;"></td>
                             <td>
+                                <?php
+                                $total = htmlspecialchars($item['cantidad']) * htmlspecialchars($item['precio']);
+                                echo number_format($total, 2); // Formatea el total con dos decimales
+                                ?>
+                            </td> <!-- Nueva columna -->
+                            <td>
                                 <form action="../actions/deleteProducto.php" method="post">
                                     <input type="hidden" name="producto_id"
                                         value="<?php echo htmlspecialchars($item['id']); ?>">
@@ -51,11 +67,20 @@ require '../actions/deleteProducto.php';
                     <?php endforeach; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="7" class="text-center">No hay productos en el carrito.</td>
+                        <td colspan="8" class="text-center">No hay productos en el carrito.</td>
+                        <!-- Actualiza el colspan -->
                     </tr>
                 <?php endif; ?>
             </tbody>
         </table>
+
+        <!-- Total general y botón de finalizar compra -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <h4>Total General: <?php echo number_format($totalGeneral, 2); ?></h4>
+            <a href="finalizarCompra.php" class="btn btn-success">Finalizar Compra</a>
+            <!-- Botón de finalizar compra -->
+        </div>
+
         <div class="text-center mt-4">
             <a href="dashboard.php" class="btn btn-primary">Seguir Comprando</a>
         </div>

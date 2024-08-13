@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search');
     const categoriaSelect = document.getElementById('category');
     const subcategoriaSelect = document.getElementById('subcategory');
+    const productosContainer = document.getElementById('productos');
 
     // Array para almacenar los productos seleccionados
     let carrito = [];
 
+    // Configurar el rango de precios usando noUiSlider
     noUiSlider.create(priceRange, {
         start: [5000, 74000],
         connect: true,
@@ -24,15 +26,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Actualizar el rango de precios mostrado
     priceRange.noUiSlider.on('update', (values, handle) => {
         priceValue.innerHTML = `Precio: ${values[0]} - ${values[1]}`;
     });
 
+    // Obtener los datos de los productos desde un archivo JSON
     fetch('../json/productos.json')
         .then(response => response.json())
         .then(data => {
-            const productosContainer = document.getElementById('productos');
-
+            // Llenar las opciones de categoría
             data.categorias.forEach(categoria => {
                 const categoriaOption = document.createElement('option');
                 categoriaOption.value = categoria.nombre;
@@ -40,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 categoriaSelect.appendChild(categoriaOption);
             });
 
+            // Manejar el cambio en la categoría seleccionada
             categoriaSelect.addEventListener('change', () => {
                 const categoriaSeleccionada = categoriaSelect.value;
                 subcategoriaSelect.innerHTML = '<option value="">Todas</option>';
@@ -59,14 +63,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 filtrarProductos();
             });
 
+            // Manejar el cambio en la subcategoría seleccionada
             subcategoriaSelect.addEventListener('change', () => {
                 filtrarProductos();
             });
 
+            // Manejar el filtrado por rango de precios
             filterPriceButton.addEventListener('click', () => {
                 filtrarProductos();
             });
 
+            // Manejar la búsqueda por palabra clave
             searchButton.addEventListener('click', () => {
                 filtrarProductos(true);
                 searchInput.value = '';
@@ -74,6 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 subcategoriaSelect.value = '';
             });
 
+            // Filtrar productos basado en los filtros aplicados
             function filtrarProductos(esBusquedaPorPalabraClave = false) {
                 const categoriaSeleccionada = categoriaSelect.value;
                 const subcategoriaSeleccionada = subcategoriaSelect.value;
@@ -108,12 +116,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 mostrarProductos(productosFiltrados);
             }
 
+            // Mostrar los productos filtrados en la interfaz
             function mostrarProductos(productos) {
                 productosContainer.innerHTML = '';
                 productos.forEach(producto => {
                     const productoDiv = document.createElement('div');
                     productoDiv.classList.add('col-md-4', 'mb-3');
-                    
+
                     productoDiv.innerHTML = `
                         <div class="card">
                             <img src="${producto.Imagen}" class="card-img-top" alt="${producto.nombre}">
@@ -136,20 +145,20 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </div>
                             </div>
                         </div>`;
-                    
+
                     productosContainer.appendChild(productoDiv);
-            
+
                     // Añadir eventos a los botones de aumentar y disminuir
                     const decreaseBtn = productoDiv.querySelector('.decrease-btn');
                     const increaseBtn = productoDiv.querySelector('.increase-btn');
                     const quantityInput = productoDiv.querySelector('.quantity-input');
-            
+
                     decreaseBtn.addEventListener('click', () => {
                         if (quantityInput.value > 1) {
                             quantityInput.value--;
                         }
                     });
-            
+
                     increaseBtn.addEventListener('click', () => {
                         quantityInput.value++;
                     });
@@ -160,39 +169,26 @@ document.addEventListener('DOMContentLoaded', () => {
                         const productoExistente = carrito.find(item => item.id === producto.id);
 
                         if (productoExistente) {
-                            // Si el producto ya existe en el carrito, simplemente aumenta la cantidad
+                            // Si el producto ya existe en el carrito, incrementar la cantidad
                             productoExistente.cantidad += parseInt(cantidad);
                         } else {
-                            // Si el producto no existe en el carrito, lo añade como nuevo
+                            // Si el producto no existe, añadirlo al carrito
                             const productoCarrito = {
                                 ...producto,
                                 cantidad: parseInt(cantidad) // Guardar la cantidad seleccionada
                             };
 
                             carrito.push(productoCarrito);
-                            
                         }
-                        
+
                         console.log('Carrito actual:', carrito);
                         console.log('Producto añadido al carrito:', producto);
                     });
                 });
             }
 
-            function decreaseQuantity(button) {
-                const input = button.parentElement.parentElement.querySelector('input[type="number"]');
-                if (input.value > 1) {
-                    input.value--;
-                }
-            }
-            
-            function increaseQuantity(button) {
-                const input = button.parentElement.parentElement.querySelector('input[type="number"]');
-                input.value++;
-            }
-
+            // Función para guardar el carrito en el servidor
             function guardarCarrito() {
-
                 fetch('/actions/carrito.php', {
                     method: 'POST',
                     headers: {
@@ -212,6 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Añadir un botón para guardar el carrito y llamar a la función
             document.getElementById('guardarCarritoButton').addEventListener('click', guardarCarrito);
 
+            // Inicializar los productos filtrados al cargar la página
             filtrarProductos();
         });
 });
