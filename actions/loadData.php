@@ -2,6 +2,7 @@
 session_start();
 require_once "../utils/database.php";
 
+// Verificar si el usuario está logueado
 if (!isset($_SESSION['user_id'])) {
     header("Location: ../pages/login.php");
     exit();
@@ -9,6 +10,7 @@ if (!isset($_SESSION['user_id'])) {
 
 $userId = $_SESSION['user_id'];
 
+// Consultar los datos del usuario
 $sql = "SELECT nombre, apellido, telefono, direccion, email FROM usuarios WHERE id = ?";
 if ($stmt = $mysqli->prepare($sql)) {
     $stmt->bind_param("i", $userId);

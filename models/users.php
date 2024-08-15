@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once "../utils/database.php"; 
+require_once "../utils/database.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $mysqli->real_escape_string($_POST['email']);
@@ -23,15 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                     header("Location: ../pages/dashboard.php");
                     exit();
-                } else {
-                    echo "Correo electrónico o contraseña incorrectos.";
                 }
-            } else {
-                echo "Correo electrónico o contraseña incorrectos.";
             }
-        } else {
-            echo "Error en la consulta: " . $stmt->error;
         }
+
+        echo "<script>alert('Correo o contraseña incorrectos.'); window.location.href='../pages/login.php';</script>";
 
         $stmt->close();
     } else {

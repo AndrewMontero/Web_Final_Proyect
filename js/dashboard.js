@@ -188,9 +188,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     carrito.push({ ...producto, cantidad });
                 }
 
+                // Mostrar mensaje de confirmación
+                alert('Producto añadido exitosamente al carrito');
+
                 // Actualiza el carrito (esto sería una función para renderizar el carrito)
                 actualizarCarrito();
             }
+
 
             // Función que simula la actualización del carrito en el frontend
             function actualizarCarrito() {

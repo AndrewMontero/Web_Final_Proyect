@@ -86,60 +86,49 @@ body {
     background: #007bff;
 }
 
+/* Ajuste de los iconos */
 .icono-usuario,
-.icono-carrito {
-    width: 50px;
-    height: 50px;
+.icono-carrito,
+.icono-salir {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
 }
 
 .texto-usuario,
-.texto-carrito {
-    font-size: 14px;
-    /* Tamaño de fuente ajustado */
-    color: orange;
-    /* Color de texto naranja */
-}
-
-.usuarioCarrito a {
-    text-decoration: none;
-    color: inherit;
-    /* El texto hereda el color del enlace */
-}
-
-.usuarioCarrito img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.icono-salir {
-    width: 50px;
-    height: 50px;
-}
-
+.texto-carrito,
 .texto-salir {
     font-size: 14px;
     color: orange;
-    /* Mismo estilo que los textos de usuario y carrito */
 }
 
-.header .col-3:first-child {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
+/* Estilo para las secciones de usuario y carrito */
 .usuarioCarrito a,
-.header .col-3:first-child a {
+a.d-flex {
     text-decoration: none;
     color: inherit;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .usuarioCarrito img,
-.header .col-3:first-child img {
+a.d-flex img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.usuarioCarrito .texto-usuario,
+.usuarioCarrito .texto-carrito,
+.texto-salir {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.col-3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 15px;
 }
