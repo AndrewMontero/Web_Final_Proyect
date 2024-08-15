@@ -11,7 +11,7 @@ require '../shared/header.php';
                         <h4>Registro</h4>
                     </div>
                     <div class="card-body">
-                        <form action="/actions/register.php" method="POST" onsubmit="return validateForm()">
+                        <form action="../actions/register.php" method="POST" onsubmit="return validateForm()">
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
                                 <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
@@ -22,8 +22,8 @@ require '../shared/header.php';
                             </div>
                             <div class="form-group">
                                 <label for="telefono">Teléfono</label>
-                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su teléfono" required pattern="[0-9]{10}">
-                                <small class="form-text text-muted">Debe contener 10 dígitos.</small>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingrese su teléfono" required pattern="\d{8}">
+                                <small class="form-text text-muted">Debe contener 8 dígitos.</small>
                             </div>
                             <div class="form-group">
                                 <label for="direccion">Dirección</label>
@@ -47,28 +47,7 @@ require '../shared/header.php';
             </div>
         </div>
     </div>
-
-    <script>
-        function validateForm() {
-            const telefono = document.getElementById('telefono').value;
-            const contraseña = document.getElementById('contraseña').value;
-
-            // Validación de número de teléfono (debe tener 10 dígitos)
-            if (!/^\d{10}$/.test(telefono)) {
-                alert('El número de teléfono debe contener 10 dígitos.');
-                return false;
-            }
-
-            // Validación de contraseña (mínimo 8 caracteres)
-            if (contraseña.length < 8) {
-                alert('La contraseña debe tener al menos 8 caracteres.');
-                return false;
-            }
-
-            return true; // Si todas las validaciones pasan, permite el envío del formulario
-        }
-    </script>
-
+    <script src="../js/registrer.js"> </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

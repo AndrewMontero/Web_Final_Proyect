@@ -8,10 +8,10 @@ require '../shared/header.php';
             <div class="col-md-6">
                 <div class="card shadow-sm">
                     <div class="card-header text-center bg-primary text-white">
-                        <h4>Registro</h4>
+                        <h4>Login</h4>
                     </div>
                     <div class="card-body">
-                        <form action="/models/register.php" method="POST" onsubmit="return validateForm()">
+                        <form action="../models/users.php" method="POST" onsubmit="return validateForm()">
                             <div class="form-group">
                                 <label for="nombre">Nombre</label>
                                 <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
@@ -28,11 +28,11 @@ require '../shared/header.php';
                                 <label for="confirmarContraseña">Confirmar Contraseña</label>
                                 <input type="password" class="form-control" id="confirmarContraseña" name="confirmarContraseña" placeholder="Confirme su contraseña" required>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+                            <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
                         </form>
                     </div>
                     <div class="card-footer text-center">
-                        <a href="login.php">¿Ya tienes una cuenta? Inicia sesión aquí</a>
+                        <a href="register.php">¿No tienes una cuenta? Registrala aquí</a>
                     </div>
                 </div>
             </div>
