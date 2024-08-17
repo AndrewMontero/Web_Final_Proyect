@@ -167,6 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     productoDiv.querySelector('.add-to-cart').addEventListener('click', () => {
                         const cantidad = parseInt(quantityInput.value);
                         addToCart(producto.id, cantidad);
+                        // Resetea el valor del spinner a 1 después de añadir el producto
+                        quantityInput.value = 1;
                     });
                 });
             }
@@ -194,7 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Actualiza el carrito (esto sería una función para renderizar el carrito)
                 actualizarCarrito();
             }
-
 
             // Función que simula la actualización del carrito en el frontend
             function actualizarCarrito() {
@@ -225,5 +226,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Inicializar los productos filtrados al cargar la página
             filtrarProductos();
+        })
+        .catch(error => {
+            console.error('Error al cargar el archivo JSON:', error);
         });
 });
