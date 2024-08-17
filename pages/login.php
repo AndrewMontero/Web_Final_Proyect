@@ -12,10 +12,7 @@ require '../shared/header.php';
                     </div>
                     <div class="card-body">
                         <form action="../models/users.php" method="POST" onsubmit="return validateForm()">
-                            <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
-                            </div>
+
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email" required>
@@ -24,10 +21,7 @@ require '../shared/header.php';
                                 <label for="contraseña">Contraseña</label>
                                 <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña" required>
                             </div>
-                            <div class="form-group">
-                                <label for="confirmarContraseña">Confirmar Contraseña</label>
-                                <input type="password" class="form-control" id="confirmarContraseña" name="confirmarContraseña" placeholder="Confirme su contraseña" required>
-                            </div>
+
                             <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
                         </form>
                     </div>

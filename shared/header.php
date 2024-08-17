@@ -1,16 +1,3 @@
-<?php
-/* Validate if there's an user session 
-session_start();
-if (!$_SESSION['user']) {
-    header('Location: /pages/users/login.php');
-}
-
-$error = false;
-if (isset($_GET['error'])) {
-    $error = $_GET['error'];
-}
-*/
-?>
 <!DOCTYPE html>
 <html lang="en">
 

@@ -7,6 +7,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $mysqli->real_escape_string($_POST['email']);
     $contraseña = $mysqli->real_escape_string($_POST['contraseña']);
 
+    // Verificación de las credenciales del administrador
+    if ($email === 'admin123@gmail.com' && $contraseña === 'admin123') {
+        $_SESSION['email'] = $email;
+        header("Location: ../pages/reportes.php");
+        exit();
+    }
+
+    // Consulta para validar las credenciales del usuario común
     $sql = "SELECT id, contraseña FROM usuarios WHERE email = ?";
     if ($stmt = $mysqli->prepare($sql)) {
         $stmt->bind_param("s", $email);
@@ -27,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         }
 
+        // Mensaje de error si las credenciales no son correctas
         echo "<script>alert('Correo o contraseña incorrectos.'); window.location.href='../pages/login.php';</script>";
 
         $stmt->close();
