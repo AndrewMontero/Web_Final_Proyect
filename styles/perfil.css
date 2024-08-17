@@ -1,0 +1,105 @@
+/* Ajustes generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* Estilo de las tarjetas */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados de las tarjetas */
+.card-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 15px;
+}
+
+/* Estilo para el formulario de edición de perfil */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+}
+
+.btn-block {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn-block:hover {
+    background-color: #0056b3;
+}
+
+/* Tabla de pedidos */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table thead th {
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: 600;
+}
+
+.table tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos para la tarjeta de pedidos */
+.card-header.bg-secondary {
+    background-color: #6c757d;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* Responsividad */
+@media (max-width: 767.98px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}

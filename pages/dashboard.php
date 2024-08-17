@@ -48,7 +48,6 @@
 
         <div class="row">
             <div class="col-3 sidebar">
-                <h5>Filtro</h5>
                 <form id="filterForm">
                     <div class="form-group">
                         <label for="search">Buscador</label>

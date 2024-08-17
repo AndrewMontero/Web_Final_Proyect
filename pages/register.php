@@ -1,15 +1,14 @@
 <?php
 require '../shared/header.php';
 ?>
+<link rel="stylesheet" href="../styles/registrer.css">
 
 <body>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card shadow-sm">
-                    <div class="card-header text-center bg-primary text-white">
-                        <h4>Registro</h4>
-                    </div>
+                    
                     <div class="card-body">
                         <form action="../actions/register.php" method="POST" onsubmit="return validateForm()">
                             <div class="form-group">

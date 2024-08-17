@@ -1,5 +1,5 @@
 <?php
-require_once ("../actions/generateReport.php");
+require_once("../actions/generateReport.php");
 require_once("../shared/header.php");
 ?>
 
@@ -30,6 +30,9 @@ require_once("../shared/header.php");
                 <?php endforeach; ?>
             </tbody>
         </table>
+        <div class="text-center">
+            <a href="../actions/generatePDF.php" class="btn btn-primary">Generar PDF</a>
+        </div>
     </div>
 </body>
 

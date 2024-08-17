@@ -65,10 +65,10 @@ if (!empty($productos)) {
                                 </td>
                                 <td>
                                     <form action="../actions/deleteProducto.php" method="post" class="d-inline">
-                                        <input type="hidden" name="producto_id"
-                                            value="<?php echo htmlspecialchars($item['id']); ?>">
+                                        <input type="hidden" name="producto_id" value="<?php echo htmlspecialchars($item['id']); ?>">
                                         <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
                                     </form>
+
                                 </td>
                             </tr>
                         <?php endforeach; ?>
