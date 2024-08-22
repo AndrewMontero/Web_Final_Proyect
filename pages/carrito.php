@@ -20,6 +20,22 @@ if (!empty($productos)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.paypal.com/sdk/js?client-id=AfDDJ82yqDrmGJAR_x6AdQX5-WAS1HZOGidxh0YJryy6N-6qgf9gcjvEabPhUn5V-n_Mus-N6vFrSx1C&currency=USD"></script>
+
+    <style>
+        .paypal-button-container {
+            margin-top: 20px;
+        }
+
+        /* Estilo para centrar el botón de PayPal */
+        .paypal-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura de la pantalla */
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -68,7 +84,6 @@ if (!empty($productos)) {
                                         <input type="hidden" name="producto_id" value="<?php echo htmlspecialchars($item['id']); ?>">
                                         <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
                                     </form>
-
                                 </td>
                             </tr>
                         <?php endforeach; ?>
@@ -84,54 +99,39 @@ if (!empty($productos)) {
             <div class="d-flex justify-content-between align-items-center mt-4">
                 <button type="submit" class="btn btn-warning">Actualizar Cantidades</button>
                 <h4>Total General: <?php echo number_format($totalGeneral, 2); ?></h4>
-                <!-- Botón para abrir el modal de finalizar compra -->
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#finalizarCompraModal">Finalizar Compra</button>
+                <a href="dashboard.php" class="btn btn-primary">Seguir Comprando</a>
             </div>
         </form>
-
-        <div class="text-center mt-4">
-            <a href="dashboard.php" class="btn btn-primary">Seguir Comprando</a>
-        </div>
     </div>
 
-    <!-- Modal para finalizar compra -->
-    <div class="modal fade" id="finalizarCompraModal" tabindex="-1" role="dialog" aria-labelledby="finalizarCompraModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="finalizarCompraModalLabel">Finalizar Compra</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form action="../actions/procesarPago.php" method="post">
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label for="nombreTarjeta">Nombre en la Tarjeta</label>
-                            <input type="text" class="form-control" id="nombreTarjeta" name="nombreTarjeta" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="numeroTarjeta">Número de Tarjeta</label>
-                            <input type="text" class="form-control" id="numeroTarjeta" name="numeroTarjeta" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="fechaVencimiento">Fecha de Vencimiento</label>
-                            <input type="text" class="form-control" id="fechaVencimiento" name="fechaVencimiento" placeholder="MM/AA" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="codigoCVV">Código CVV</label>
-                            <input type="text" class="form-control" id="codigoCVV" name="codigoCVV" required>
-                        </div>
-                        <input type="hidden" name="total" value="<?php echo $totalGeneral; ?>">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary">Pagar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+    <!-- Contenedor para el botón de PayPal -->
+    <div class="paypal-wrapper">
+        <div id="paypal-button-container"></div>
     </div>
+
+    <script>
+        // Configurar PayPal
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '<?php echo number_format($totalGeneral, 2, '.', ''); ?>' // Total del carrito
+                        }
+                    }]
+                });
+            },
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(details) {
+                    // Redirigir a completar la compra después de un pago exitoso
+                    window.location.href = 'dashboard.php';
+                });
+            },
+            onError: function(err) {
+                alert("Ocurrió un error en el proceso.");
+            }
+        }).render('#paypal-button-container'); // Renderizar el botón de PayPal en el contenedor especificado
+    </script>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

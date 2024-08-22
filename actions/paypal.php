@@ -34,6 +34,7 @@ $_SESSION['total_amount'] = $total_price;
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Your Cart</title>
@@ -43,6 +44,7 @@ $_SESSION['total_amount'] = $total_price;
     <!-- PayPal SDK -->
     <script src="https://www.paypal.com/sdk/js?client-id=AfDDJ82yqDrmGJAR_x6AdQX5-WAS1HZOGidxh0YJryy6N-6qgf9gcjvEabPhUn5V-n_Mus-N6vFrSx1C&currency=USD"></script>
 </head>
+
 <body>
     <div class="container mt-5">
         <h1>Your Cart</h1>
@@ -113,7 +115,9 @@ $_SESSION['total_amount'] = $total_price;
         // Manejar la eliminación de un artículo del carrito
         $(document).on('click', '.remove-item', function() {
             var productId = $(this).data('product-id');
-            $.post('../controller/remove_from_cart.php', { product_id: productId }, function(response) {
+            $.post('../controller/remove_from_cart.php', {
+                product_id: productId
+            }, function(response) {
                 $('#product-' + productId).remove();
                 // Actualizar el total del carrito
                 location.reload();
@@ -121,4 +125,5 @@ $_SESSION['total_amount'] = $total_price;
         });
     </script>
 </body>
+
 </html>
