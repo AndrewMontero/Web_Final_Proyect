@@ -20,7 +20,7 @@ if (!empty($productos)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://www.paypal.com/sdk/js?client-id=AfDDJ82yqDrmGJAR_x6AdQX5-WAS1HZOGidxh0YJryy6N-6qgf9gcjvEabPhUn5V-n_Mus-N6vFrSx1C&currency=USD"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AQLBVVqiN_nIgCFxWXRcv7-ae-6IeCIUXZuCG5q2soaPqruSsejXpytDCX7NUfUorAlx3NfNbdnAJMQW&currency=USD"></script>
 
     <style>
         .paypal-button-container {
